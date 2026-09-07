@@ -1,0 +1,3217 @@
+{
+  "schema_version": 1,
+  "pack_name": "Ironvale original procedural RTS starter audio",
+  "seed": 739174,
+  "sample_rate_hz": 48000,
+  "asset_count": 139,
+  "voice_tool": "/usr/bin/espeak",
+  "notes": [
+    "No Age of Empires recordings, melodies, or samples included.",
+    "Procedural effects and music are prototype assets; synthetic voices are explicitly placeholders.",
+    "One game event selects one variant; do not play every variant.",
+    "Spatial enemy audio must obey the receiving player visibility rules."
+  ],
+  "events": {
+    "ui.click": {
+      "variants": [
+        "ui.click_01",
+        "ui.click_02"
+      ],
+      "bus": "ui",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 0.04,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "ui.confirm": {
+      "variants": [
+        "ui.confirm_01"
+      ],
+      "bus": "ui",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 0.1,
+      "max_concurrent": 2,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "ui.cancel": {
+      "variants": [
+        "ui.cancel_01"
+      ],
+      "bus": "ui",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 0.1,
+      "max_concurrent": 2,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "ui.error": {
+      "variants": [
+        "ui.error_01",
+        "ui.error_02"
+      ],
+      "bus": "ui",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 0.5,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "ui.select": {
+      "variants": [
+        "ui.select_01",
+        "ui.select_02"
+      ],
+      "bus": "ui",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 0.08,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "ui.queued": {
+      "variants": [
+        "ui.queued_01"
+      ],
+      "bus": "ui",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 0.06,
+      "max_concurrent": 2,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "ui.rally": {
+      "variants": [
+        "ui.rally_01"
+      ],
+      "bus": "ui",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 0.15,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "ui.ping": {
+      "variants": [
+        "ui.ping_01"
+      ],
+      "bus": "ui",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 0.7,
+      "max_concurrent": 2,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "alerts.under_attack": {
+      "variants": [
+        "alerts.under_attack_01",
+        "alerts.under_attack_02"
+      ],
+      "bus": "alerts",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 8,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "alerts.age_complete": {
+      "variants": [
+        "alerts.age_complete_01"
+      ],
+      "bus": "alerts",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 2,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "alerts.research_complete": {
+      "variants": [
+        "alerts.research_complete_01"
+      ],
+      "bus": "alerts",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 0.5,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "alerts.building_complete": {
+      "variants": [
+        "alerts.building_complete_01"
+      ],
+      "bus": "alerts",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 0.5,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "alerts.unit_complete": {
+      "variants": [
+        "alerts.unit_complete_01"
+      ],
+      "bus": "alerts",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 0.6,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "alerts.population_full": {
+      "variants": [
+        "alerts.population_full_01"
+      ],
+      "bus": "alerts",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 4,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "alerts.resource_low": {
+      "variants": [
+        "alerts.resource_low_01"
+      ],
+      "bus": "alerts",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 3,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "economy.wood_chop": {
+      "variants": [
+        "economy.wood_chop_01",
+        "economy.wood_chop_02",
+        "economy.wood_chop_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.06,
+      "max_concurrent": 4,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "economy.mine_strike": {
+      "variants": [
+        "economy.mine_strike_01",
+        "economy.mine_strike_02",
+        "economy.mine_strike_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.06,
+      "max_concurrent": 4,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "economy.harvest": {
+      "variants": [
+        "economy.harvest_01",
+        "economy.harvest_02",
+        "economy.harvest_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.15,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "economy.gather": {
+      "variants": [
+        "economy.gather_01",
+        "economy.gather_02",
+        "economy.gather_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.15,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "economy.deposit": {
+      "variants": [
+        "economy.deposit_01",
+        "economy.deposit_02"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.12,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "economy.build_hammer": {
+      "variants": [
+        "economy.build_hammer_01",
+        "economy.build_hammer_02",
+        "economy.build_hammer_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.12,
+      "max_concurrent": 4,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "economy.repair_hammer": {
+      "variants": [
+        "economy.repair_hammer_01",
+        "economy.repair_hammer_02",
+        "economy.repair_hammer_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.12,
+      "max_concurrent": 4,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "movement.footstep_dirt": {
+      "variants": [
+        "movement.footstep_dirt_01",
+        "movement.footstep_dirt_02",
+        "movement.footstep_dirt_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.04,
+      "max_concurrent": 6,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "movement.footstep_stone": {
+      "variants": [
+        "movement.footstep_stone_01",
+        "movement.footstep_stone_02",
+        "movement.footstep_stone_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.04,
+      "max_concurrent": 6,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "movement.horse_hoof": {
+      "variants": [
+        "movement.horse_hoof_01",
+        "movement.horse_hoof_02",
+        "movement.horse_hoof_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.07,
+      "max_concurrent": 5,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "movement.wheel": {
+      "variants": [
+        "movement.wheel_01",
+        "movement.wheel_02",
+        "movement.wheel_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.2,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "combat.sword_swing": {
+      "variants": [
+        "combat.sword_swing_01",
+        "combat.sword_swing_02",
+        "combat.sword_swing_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.03,
+      "max_concurrent": 8,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "combat.spear_thrust": {
+      "variants": [
+        "combat.spear_thrust_01",
+        "combat.spear_thrust_02",
+        "combat.spear_thrust_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.03,
+      "max_concurrent": 8,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "combat.impact_metal": {
+      "variants": [
+        "combat.impact_metal_01",
+        "combat.impact_metal_02",
+        "combat.impact_metal_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.04,
+      "max_concurrent": 8,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "combat.impact_soft": {
+      "variants": [
+        "combat.impact_soft_01",
+        "combat.impact_soft_02",
+        "combat.impact_soft_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.04,
+      "max_concurrent": 8,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "combat.bow_release": {
+      "variants": [
+        "combat.bow_release_01",
+        "combat.bow_release_02",
+        "combat.bow_release_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.03,
+      "max_concurrent": 8,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "combat.arrow_wood": {
+      "variants": [
+        "combat.arrow_wood_01",
+        "combat.arrow_wood_02",
+        "combat.arrow_wood_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.04,
+      "max_concurrent": 8,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "combat.arrow_ground": {
+      "variants": [
+        "combat.arrow_ground_01",
+        "combat.arrow_ground_02",
+        "combat.arrow_ground_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.04,
+      "max_concurrent": 8,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "combat.crossbow_release": {
+      "variants": [
+        "combat.crossbow_release_01",
+        "combat.crossbow_release_02",
+        "combat.crossbow_release_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.04,
+      "max_concurrent": 8,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "combat.handgun_shot": {
+      "variants": [
+        "combat.handgun_shot_01",
+        "combat.handgun_shot_02",
+        "combat.handgun_shot_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.06,
+      "max_concurrent": 6,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "combat.unit_death": {
+      "variants": [
+        "combat.unit_death_01",
+        "combat.unit_death_02",
+        "combat.unit_death_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.08,
+      "max_concurrent": 5,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "siege.ram_hit": {
+      "variants": [
+        "siege.ram_hit_01",
+        "siege.ram_hit_02",
+        "siege.ram_hit_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.1,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "siege.catapult_launch": {
+      "variants": [
+        "siege.catapult_launch_01",
+        "siege.catapult_launch_02"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.1,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "siege.rock_impact": {
+      "variants": [
+        "siege.rock_impact_01",
+        "siege.rock_impact_02",
+        "siege.rock_impact_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.08,
+      "max_concurrent": 4,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "siege.trebuchet_launch": {
+      "variants": [
+        "siege.trebuchet_launch_01",
+        "siege.trebuchet_launch_02"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.1,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "siege.cannon_shot": {
+      "variants": [
+        "siege.cannon_shot_01",
+        "siege.cannon_shot_02"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.12,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "siege.explosion": {
+      "variants": [
+        "siege.explosion_01",
+        "siege.explosion_02"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.1,
+      "max_concurrent": 4,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "siege.building_collapse": {
+      "variants": [
+        "siege.building_collapse_01",
+        "siege.building_collapse_02"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.2,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "monastery.heal": {
+      "variants": [
+        "monastery.heal_01",
+        "monastery.heal_02"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.3,
+      "max_concurrent": 2,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "monastery.conversion_start": {
+      "variants": [
+        "monastery.conversion_start_01"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.5,
+      "max_concurrent": 2,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "monastery.conversion_complete": {
+      "variants": [
+        "monastery.conversion_complete_01"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.3,
+      "max_concurrent": 2,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "monastery.relic_pickup": {
+      "variants": [
+        "monastery.relic_pickup_01"
+      ],
+      "bus": "alerts",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 0.4,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "naval.oar_splash": {
+      "variants": [
+        "naval.oar_splash_01",
+        "naval.oar_splash_02",
+        "naval.oar_splash_03"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.12,
+      "max_concurrent": 4,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "naval.cannon_shot": {
+      "variants": [
+        "naval.cannon_shot_01",
+        "naval.cannon_shot_02"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.12,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "naval.fire_attack": {
+      "variants": [
+        "naval.fire_attack_01",
+        "naval.fire_attack_02"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.1,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "naval.ship_sink": {
+      "variants": [
+        "naval.ship_sink_01",
+        "naval.ship_sink_02"
+      ],
+      "bus": "world",
+      "spatial": true,
+      "gain": 0.55,
+      "cooldown_seconds": 0.2,
+      "max_concurrent": 3,
+      "random_pitch_range": [
+        0.96,
+        1.04
+      ]
+    },
+    "results.victory": {
+      "variants": [
+        "results.victory_01"
+      ],
+      "bus": "alerts",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 4,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "results.defeat": {
+      "variants": [
+        "results.defeat_01"
+      ],
+      "bus": "alerts",
+      "spatial": false,
+      "gain": 0.65,
+      "cooldown_seconds": 4,
+      "max_concurrent": 1,
+      "random_pitch_range": [
+        1,
+        1
+      ]
+    },
+    "ambience.forest": {
+      "variants": [
+        "ambience.forest_loop"
+      ],
+      "bus": "ambience",
+      "spatial": false,
+      "gain": 0.4,
+      "max_concurrent": 1
+    },
+    "ambience.river": {
+      "variants": [
+        "ambience.river_loop"
+      ],
+      "bus": "ambience",
+      "spatial": false,
+      "gain": 0.4,
+      "max_concurrent": 1
+    },
+    "ambience.sea": {
+      "variants": [
+        "ambience.sea_loop"
+      ],
+      "bus": "ambience",
+      "spatial": false,
+      "gain": 0.4,
+      "max_concurrent": 1
+    },
+    "ambience.fire": {
+      "variants": [
+        "ambience.fire_loop"
+      ],
+      "bus": "ambience",
+      "spatial": false,
+      "gain": 0.4,
+      "max_concurrent": 1
+    },
+    "music.explore": {
+      "variants": [
+        "music.explore_loop"
+      ],
+      "bus": "music",
+      "spatial": false,
+      "gain": 0.5,
+      "max_concurrent": 1
+    },
+    "music.battle": {
+      "variants": [
+        "music.battle_loop"
+      ],
+      "bus": "music",
+      "spatial": false,
+      "gain": 0.5,
+      "max_concurrent": 1
+    },
+    "voice.villager_select": {
+      "variants": [
+        "voice_placeholder.villager_select"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Ready.",
+      "placeholder": true
+    },
+    "voice.villager_move": {
+      "variants": [
+        "voice_placeholder.villager_move"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "On my way.",
+      "placeholder": true
+    },
+    "voice.villager_build": {
+      "variants": [
+        "voice_placeholder.villager_build"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Building.",
+      "placeholder": true
+    },
+    "voice.villager_gather": {
+      "variants": [
+        "voice_placeholder.villager_gather"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "To work.",
+      "placeholder": true
+    },
+    "voice.villager_repair": {
+      "variants": [
+        "voice_placeholder.villager_repair"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Making repairs.",
+      "placeholder": true
+    },
+    "voice.soldier_select": {
+      "variants": [
+        "voice_placeholder.soldier_select"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Your orders.",
+      "placeholder": true
+    },
+    "voice.soldier_move": {
+      "variants": [
+        "voice_placeholder.soldier_move"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Moving out.",
+      "placeholder": true
+    },
+    "voice.soldier_attack": {
+      "variants": [
+        "voice_placeholder.soldier_attack"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Advance.",
+      "placeholder": true
+    },
+    "voice.cavalry_select": {
+      "variants": [
+        "voice_placeholder.cavalry_select"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Mounted and ready.",
+      "placeholder": true
+    },
+    "voice.cavalry_move": {
+      "variants": [
+        "voice_placeholder.cavalry_move"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Ride out.",
+      "placeholder": true
+    },
+    "voice.siege_select": {
+      "variants": [
+        "voice_placeholder.siege_select"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Engine ready.",
+      "placeholder": true
+    },
+    "voice.siege_attack": {
+      "variants": [
+        "voice_placeholder.siege_attack"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Take aim.",
+      "placeholder": true
+    },
+    "voice.monk_select": {
+      "variants": [
+        "voice_placeholder.monk_select"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "At your service.",
+      "placeholder": true
+    },
+    "voice.monk_heal": {
+      "variants": [
+        "voice_placeholder.monk_heal"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Be restored.",
+      "placeholder": true
+    },
+    "voice.under_attack": {
+      "variants": [
+        "voice_placeholder.under_attack"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Our settlement is under attack.",
+      "placeholder": true
+    },
+    "voice.population_full": {
+      "variants": [
+        "voice_placeholder.population_full"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Build more houses.",
+      "placeholder": true
+    },
+    "voice.not_enough_resources": {
+      "variants": [
+        "voice_placeholder.not_enough_resources"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Not enough resources.",
+      "placeholder": true
+    },
+    "voice.age_complete": {
+      "variants": [
+        "voice_placeholder.age_complete"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "A new age begins.",
+      "placeholder": true
+    },
+    "voice.victory": {
+      "variants": [
+        "voice_placeholder.victory"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "Victory is ours.",
+      "placeholder": true
+    },
+    "voice.defeat": {
+      "variants": [
+        "voice_placeholder.defeat"
+      ],
+      "bus": "voice",
+      "spatial": false,
+      "gain": 0.7,
+      "cooldown_seconds": 1.1,
+      "max_concurrent": 1,
+      "text": "We have been defeated.",
+      "placeholder": true
+    }
+  },
+  "assets": [
+    {
+      "id": "ui.click_01",
+      "wav": "ui/click_01.wav",
+      "ogg": "ui/click_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 3840,
+      "duration_seconds": 0.08,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -18.779,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "39da78b31b1f818eba7c2d97ad994e4d166a59f0405e0e72bf6d56900670a02c",
+      "sha256_ogg": "02602a6cfb5b7f6460897d34121092adca22a87ad6e37db30cc643a3e7ffe6d4"
+    },
+    {
+      "id": "ui.click_02",
+      "wav": "ui/click_02.wav",
+      "ogg": "ui/click_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 3840,
+      "duration_seconds": 0.08,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -19.778,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "dcabfcce038cca3411e428d000ee8ce2ca65cdd79cbde45f99fb4f414f2bd864",
+      "sha256_ogg": "df8f6a8a00c21e3f250587fc7b4560a8970ac90bec8060351f0607ead3ddbee6"
+    },
+    {
+      "id": "ui.confirm_01",
+      "wav": "ui/confirm_01.wav",
+      "ogg": "ui/confirm_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 17520,
+      "duration_seconds": 0.365,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -16.312,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "a70a3f9cc7ff4ec4732104d0a2aeeb27cef8125045d9896108db0afd2d7fa432",
+      "sha256_ogg": "0306477178363aecd4959153cee5d292e2a0eb149868337078740a00080cb219"
+    },
+    {
+      "id": "ui.cancel_01",
+      "wav": "ui/cancel_01.wav",
+      "ogg": "ui/cancel_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 14640,
+      "duration_seconds": 0.305,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -15.662,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "b77a27874516ca9af40b5ed2c9630c271dc7191c01f6dbb3adbfd912492e3c7b",
+      "sha256_ogg": "962ac18fa3e155fbe2b74647361f921e9491ec32caf823536a5a289549a2239e"
+    },
+    {
+      "id": "ui.error_01",
+      "wav": "ui/error_01.wav",
+      "ogg": "ui/error_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 14400,
+      "duration_seconds": 0.3,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -17.013,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "711265ed67cb559cbcead2ecbee12ed2541826409166e21010fb24c230ee031d",
+      "sha256_ogg": "d86d7687015ba8340d9b8117befaaae2751096dff27e95fc0cff50f3b4ccc956"
+    },
+    {
+      "id": "ui.error_02",
+      "wav": "ui/error_02.wav",
+      "ogg": "ui/error_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 14400,
+      "duration_seconds": 0.3,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -16.998,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "fdcf21b67d0d932a3b4878d7d087c409c81753780084f146e5c98479c206966a",
+      "sha256_ogg": "358171493d9ddd6cfda13d171b0014c8293a126adb83f8a40ef7d4c4fcfe2b87"
+    },
+    {
+      "id": "ui.select_01",
+      "wav": "ui/select_01.wav",
+      "ogg": "ui/select_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 12000,
+      "duration_seconds": 0.25,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -13.486,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "3e53f090f4a8d6d152ece36ea4d6a65ce0f12b3e3f327ff35984d80224074178",
+      "sha256_ogg": "032db7336e22da86814a1e0317f5ca805168e6ebeabcdb69cdc6a54fb41097fe"
+    },
+    {
+      "id": "ui.select_02",
+      "wav": "ui/select_02.wav",
+      "ogg": "ui/select_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 12000,
+      "duration_seconds": 0.25,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -13.495,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "93e05d6d4c8078d70a8459b882c5baa8e306ba4d7d3566333be3f5cd04c9b8fa",
+      "sha256_ogg": "545c885a36354e1518681975bc54f12b9dd23e587094b0d86465e189afb6fc27"
+    },
+    {
+      "id": "ui.queued_01",
+      "wav": "ui/queued_01.wav",
+      "ogg": "ui/queued_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 9120,
+      "duration_seconds": 0.19,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -12.828,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "7a7d604c7188a0e258cb159febc52669d07a19d5e98b0443db7c0d33c0e58775",
+      "sha256_ogg": "172bc100f87b90943a9abc442bda95ddbda874e3f5307b3e206ca4d2c748fb65"
+    },
+    {
+      "id": "ui.rally_01",
+      "wav": "ui/rally_01.wav",
+      "ogg": "ui/rally_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 16320,
+      "duration_seconds": 0.34,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -16.114,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "aa2b24e62d14103f7c95c03e2d3890fe0ef4ee60c38de8244e533b6cdd39658d",
+      "sha256_ogg": "e1f3b35199ebabb3a8c5585f87a7e31ca9a2959431cdfc1dc13aa863f3cbcc8b"
+    },
+    {
+      "id": "ui.ping_01",
+      "wav": "ui/ping_01.wav",
+      "ogg": "ui/ping_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 33600,
+      "duration_seconds": 0.7,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -17.417,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "4f3b9c3cbc1e4947e01c79fc5da192f6f52b6f5bf102d19be0b3830f4fb2fcae",
+      "sha256_ogg": "d0d0f1b5bb348f603029a1bc14e31d1cac89b9d6d4a2514062edc4eaa07dead1"
+    },
+    {
+      "id": "alerts.under_attack_01",
+      "wav": "alerts/under_attack_01.wav",
+      "ogg": "alerts/under_attack_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 57600,
+      "duration_seconds": 1.2,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -23.613,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "0a63b3e1cb41be242ee52bdda839ffd896af178c7e53fcbe8911258460049319",
+      "sha256_ogg": "90d2b73c7bdc0c225376eaee48f04410442c1bd9ff22ee72a817b7d7a05d5840"
+    },
+    {
+      "id": "alerts.under_attack_02",
+      "wav": "alerts/under_attack_02.wav",
+      "ogg": "alerts/under_attack_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 57600,
+      "duration_seconds": 1.2,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -24.088,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "a4cb3043b78dabeac0a24a9af9071e89874adcea111c80553695af7bca4fa865",
+      "sha256_ogg": "5a3a633cb9e2060f9182cb9e325d12039a1c9de254fc59b25c8354df3d33d8fd"
+    },
+    {
+      "id": "alerts.age_complete_01",
+      "wav": "alerts/age_complete_01.wav",
+      "ogg": "alerts/age_complete_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 93600,
+      "duration_seconds": 1.95,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -19.104,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "ba7d446fe3584504881af6dbfdf93969c2c4f73b7b49e269bf8ecc8c7edbcde3",
+      "sha256_ogg": "6f938adeed6ae0a95c7a14553718490ed560137d926861862cb2f8c4ac88903e"
+    },
+    {
+      "id": "alerts.research_complete_01",
+      "wav": "alerts/research_complete_01.wav",
+      "ogg": "alerts/research_complete_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 41280,
+      "duration_seconds": 0.86,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -19.729,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "3cf325eed71254e393658b29b035f67bf877e50acbcde344ce82ff79b99fe4f8",
+      "sha256_ogg": "3a1f708f152d85f64d700afc44dd322d165205e596e5d98cd46cd66a4da1e3f9"
+    },
+    {
+      "id": "alerts.building_complete_01",
+      "wav": "alerts/building_complete_01.wav",
+      "ogg": "alerts/building_complete_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31680,
+      "duration_seconds": 0.66,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -16.779,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "2bc4a0afcc80bdb6b49ca71da30f442302ca551bbf9a04da896f8037ca2685e7",
+      "sha256_ogg": "0e3b983358f7f8c2c7a9daa41955eb61db6a3629af32397fae66258febd5ea70"
+    },
+    {
+      "id": "alerts.unit_complete_01",
+      "wav": "alerts/unit_complete_01.wav",
+      "ogg": "alerts/unit_complete_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 17280,
+      "duration_seconds": 0.36,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -16.492,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "771966a8ec46feb8a4f14cbc94a6b716f213efe1dd10ca56fe6d4ba565b8dc84",
+      "sha256_ogg": "00896ef6e1f7b7e3c2706e783a8a18c23536f402dce311ba7dba80e6989e4602"
+    },
+    {
+      "id": "alerts.population_full_01",
+      "wav": "alerts/population_full_01.wav",
+      "ogg": "alerts/population_full_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 25440,
+      "duration_seconds": 0.53,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -15.948,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "8b3badbc6fd1e21a2a74b0918a9b368c87816fee55dca99c85b7485dfae54deb",
+      "sha256_ogg": "30f2a215a001b8848cd9d618b46a06a670e4bfdb19b0be80b19abe2d4e8ae8b2"
+    },
+    {
+      "id": "alerts.resource_low_01",
+      "wav": "alerts/resource_low_01.wav",
+      "ogg": "alerts/resource_low_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 27360,
+      "duration_seconds": 0.57,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -16.901,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "05825ec6e0845631766f9d03c74bd46cac69e4d15d0054ab6eaf453d53c8c4ef",
+      "sha256_ogg": "37dd1844544ee8cccb0020e7715db655335e19b771d87fad599da4a91731369e"
+    },
+    {
+      "id": "economy.wood_chop_01",
+      "wav": "economy/wood_chop_01.wav",
+      "ogg": "economy/wood_chop_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 21600,
+      "duration_seconds": 0.45,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -26.194,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "dd2f66ff4d4514585dbb594b06aab017a106114180f350a3368e3ff5848ce7e1",
+      "sha256_ogg": "13ca83cdc94466508129ba2174abcd5325b0a1a8fbd2c80fb44fb0101668a100"
+    },
+    {
+      "id": "economy.wood_chop_02",
+      "wav": "economy/wood_chop_02.wav",
+      "ogg": "economy/wood_chop_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 21600,
+      "duration_seconds": 0.45,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.965,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "c152fe9fa2f65e12cc77b64fbbceb7ec864ac92abd76d735649255e0b66c5813",
+      "sha256_ogg": "f5db9b40061d39ac29dfc5b67200c234bb738d738062cfe5225b15715a926dd9"
+    },
+    {
+      "id": "economy.wood_chop_03",
+      "wav": "economy/wood_chop_03.wav",
+      "ogg": "economy/wood_chop_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 21600,
+      "duration_seconds": 0.45,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -25.931,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "2aace6102b1ef75b2af92f3941a60bcfc77818995444f2d9d1c6866aaedaae92",
+      "sha256_ogg": "7e9d74a5f6e105be8c6576ee46437095faf1348995ecd82e29aa3639561884de"
+    },
+    {
+      "id": "economy.mine_strike_01",
+      "wav": "economy/mine_strike_01.wav",
+      "ogg": "economy/mine_strike_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 26400,
+      "duration_seconds": 0.55,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -28.686,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "fec434de14c509d5bd944aa6f71444d0f1bc9a140b1196f2672bf15c741b5adb",
+      "sha256_ogg": "4e6d6730edc6ac3ec04b5e1b90604a4ea2f83b65fcf565e6851ace870a2ea1e9"
+    },
+    {
+      "id": "economy.mine_strike_02",
+      "wav": "economy/mine_strike_02.wav",
+      "ogg": "economy/mine_strike_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 26400,
+      "duration_seconds": 0.55,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -28.809,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "2dcb68fbe2b9a3c7c3db3cc7efc78e016fda82f7fc2798147fb36c36b71c150f",
+      "sha256_ogg": "e9563baa58a02647214c589b3af865c9c43b1b7db90f2e94eafbbe7d7e701cd7"
+    },
+    {
+      "id": "economy.mine_strike_03",
+      "wav": "economy/mine_strike_03.wav",
+      "ogg": "economy/mine_strike_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 26400,
+      "duration_seconds": 0.55,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -29.139,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "5865150e8bc6b99f9c63d6bc6d5558fc609005c35a3112af8eb223f44de850c2",
+      "sha256_ogg": "9ed810bbbe5d18ecc86d17c3a3bffe547506e4a5a9cfed6540841242efe414d7"
+    },
+    {
+      "id": "economy.harvest_01",
+      "wav": "economy/harvest_01.wav",
+      "ogg": "economy/harvest_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 21600,
+      "duration_seconds": 0.45,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -20.932,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "faeb178c84a4190b90bbbc90604497b62a832773c713a9a6ee8072bce3be2af5",
+      "sha256_ogg": "a97a81169836310a937c5e0ff733ffa59552ba359f97295dde370c592ade5c2a"
+    },
+    {
+      "id": "economy.harvest_02",
+      "wav": "economy/harvest_02.wav",
+      "ogg": "economy/harvest_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 21600,
+      "duration_seconds": 0.45,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -20.63,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "f557c2d9705e493828e18ec217f4a379b4af582c4605790bb527cf14358622a2",
+      "sha256_ogg": "86008ba6ab76342a7c875643117b961ed447234a16d4b08a8d1af79695181a5d"
+    },
+    {
+      "id": "economy.harvest_03",
+      "wav": "economy/harvest_03.wav",
+      "ogg": "economy/harvest_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 21600,
+      "duration_seconds": 0.45,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -21.646,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "949dd73fa59af51d7c80eae1698b458e391dbe9a6bb36e4704222ad18dc7d016",
+      "sha256_ogg": "b2423b6455e74a3b6e9e66d08a60832fd5c91c53df3e5b7b5bc86011d2e180a3"
+    },
+    {
+      "id": "economy.gather_01",
+      "wav": "economy/gather_01.wav",
+      "ogg": "economy/gather_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 21600,
+      "duration_seconds": 0.45,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -21.238,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "c17450acd17a28a919206931ccaf3ce83311621765a80440e5b0543e714afb97",
+      "sha256_ogg": "5a59aa03836851f403f1db5cd3217fa32aa0ab77466d157d9d6416252a8a8296"
+    },
+    {
+      "id": "economy.gather_02",
+      "wav": "economy/gather_02.wav",
+      "ogg": "economy/gather_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 21600,
+      "duration_seconds": 0.45,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -22.76,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "852450f0ee028550f3eaff15c4890dda1d40e174223cbd018b9b06b1380f4ec7",
+      "sha256_ogg": "123ea1fa809ee234544a7f216835bd0e56ef8a167c50937fa623d81baa35cb45"
+    },
+    {
+      "id": "economy.gather_03",
+      "wav": "economy/gather_03.wav",
+      "ogg": "economy/gather_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 21600,
+      "duration_seconds": 0.45,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -20.766,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "e8fff2464d6f5e791fcf6a45a914e7e840b7cf3de0d8586443c42726a422669f",
+      "sha256_ogg": "fd3475e0d1e1beb34a3ded166e5264a93f050d1bc46e90ad610d7955e2cd1b12"
+    },
+    {
+      "id": "economy.deposit_01",
+      "wav": "economy/deposit_01.wav",
+      "ogg": "economy/deposit_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 21600,
+      "duration_seconds": 0.45,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -19.341,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "4e5bb3180c8ff3dd32859fa98d7dccf4a4a9ec819ffdee3d9c4e7f370c579cfc",
+      "sha256_ogg": "617d8e709137edf9c9085ba0a815321f8c5c74d679c8cbcb59f7850502b9ab67"
+    },
+    {
+      "id": "economy.deposit_02",
+      "wav": "economy/deposit_02.wav",
+      "ogg": "economy/deposit_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 21600,
+      "duration_seconds": 0.45,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -21.209,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "bb5dbeddb62588a6fad4fbea126dda7cf39597567cf70979e4c7e1b2d594f04a",
+      "sha256_ogg": "64e14df7b71351d5c2d405845b8aeae5eb08c7c905c3cf26ca144e17b9339bf9"
+    },
+    {
+      "id": "economy.build_hammer_01",
+      "wav": "economy/build_hammer_01.wav",
+      "ogg": "economy/build_hammer_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 33600,
+      "duration_seconds": 0.7,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -25.946,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "db7ae184c4b2dc4d19e02e6e1ea1ad84258df13ad528643bc3a6e54c46194e98",
+      "sha256_ogg": "51c2252e17281f383097884669106416df46384ad16326add8edb993a411095b"
+    },
+    {
+      "id": "economy.build_hammer_02",
+      "wav": "economy/build_hammer_02.wav",
+      "ogg": "economy/build_hammer_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 33600,
+      "duration_seconds": 0.7,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -27.093,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "b4bdf4e8d9a5e70966bdf87fbce8b67523ae4430efdafd31bf166e2d4b68c622",
+      "sha256_ogg": "750886218351259d008fc42697d8a241f720730afabff7f54b45e5c5073280f0"
+    },
+    {
+      "id": "economy.build_hammer_03",
+      "wav": "economy/build_hammer_03.wav",
+      "ogg": "economy/build_hammer_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 33600,
+      "duration_seconds": 0.7,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -27.253,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "595494b84940c2c07eb5f1edbca7ef3efe8261360dd336411c33d7fa8a3b2f60",
+      "sha256_ogg": "cb9108dc2f6486b9af62def41da8ae2969af49bcb4e187923f88fe78ad7e5b25"
+    },
+    {
+      "id": "economy.repair_hammer_01",
+      "wav": "economy/repair_hammer_01.wav",
+      "ogg": "economy/repair_hammer_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 33600,
+      "duration_seconds": 0.7,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -26.165,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "c83f22a2b83473d698bb81547697b259efa1f6bbecfbeb521cffa24585170c76",
+      "sha256_ogg": "7401769853d86411bf5d1bf9d24eac4b2eed371c530e84cddc2da2fb7aeebb96"
+    },
+    {
+      "id": "economy.repair_hammer_02",
+      "wav": "economy/repair_hammer_02.wav",
+      "ogg": "economy/repair_hammer_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 33600,
+      "duration_seconds": 0.7,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -25.849,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "ed376f118b316df5211f6427613a12c9b9b4f6e8292ce683c14d60b81e18e0c3",
+      "sha256_ogg": "0ca0acbf561d42c8ce1a3a3bdb661956db60a05c4ab9541bc53553e1dd4cea6c"
+    },
+    {
+      "id": "economy.repair_hammer_03",
+      "wav": "economy/repair_hammer_03.wav",
+      "ogg": "economy/repair_hammer_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 33600,
+      "duration_seconds": 0.7,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -25.233,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "6d51b3f835cec7599bc4ba2885969a6055028bd7b7387028b53dc6116bfdaa4d",
+      "sha256_ogg": "e3bc958679e18a863d26b0ed1288068fbf4da31cbd0d831ffe0614a6d225b62b"
+    },
+    {
+      "id": "movement.footstep_dirt_01",
+      "wav": "movement/footstep_dirt_01.wav",
+      "ogg": "movement/footstep_dirt_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 9120,
+      "duration_seconds": 0.19,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -23.917,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "fa0d8e26427d9b803ae8bd1759a79647f01b01bd95ad2eb9d4cba677bfafb2e8",
+      "sha256_ogg": "f2e87712dde5f76d20e5559a51af67d65b91bb1f1e771bd1851541f34f530b66"
+    },
+    {
+      "id": "movement.footstep_dirt_02",
+      "wav": "movement/footstep_dirt_02.wav",
+      "ogg": "movement/footstep_dirt_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 9120,
+      "duration_seconds": 0.19,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -23.275,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "74b315e953acd7cf331ad8ba2c20405de7e039888ff76e8784e83bec32b6b924",
+      "sha256_ogg": "f5ff21b97b62de649397d2e39f80ea2c8df8fbeb989364ded579536002ecf783"
+    },
+    {
+      "id": "movement.footstep_dirt_03",
+      "wav": "movement/footstep_dirt_03.wav",
+      "ogg": "movement/footstep_dirt_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 9120,
+      "duration_seconds": 0.19,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -22.484,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "b3f3aa8b33fa0ef9f6f31172590447adbd138e65d595bd59c05928f348400e78",
+      "sha256_ogg": "a34b10d996d0dccc4b5965935ca46739aa36b6cc4ea23ab8776d846aa1a49310"
+    },
+    {
+      "id": "movement.footstep_stone_01",
+      "wav": "movement/footstep_stone_01.wav",
+      "ogg": "movement/footstep_stone_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 8640,
+      "duration_seconds": 0.18,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -23.494,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "b9dc47d4a7858f31daa1546d3b967e08f90703a430c850634bb41348141e3354",
+      "sha256_ogg": "80c01a484d451179b3c72586257c24e14bd002e35581bceae9899f5d2e33a734"
+    },
+    {
+      "id": "movement.footstep_stone_02",
+      "wav": "movement/footstep_stone_02.wav",
+      "ogg": "movement/footstep_stone_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 8640,
+      "duration_seconds": 0.18,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -23.197,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "31791f7ef207b4c877a910626fd6cc683df1ec405ae124614e551d69040d9125",
+      "sha256_ogg": "2cdfb25a1e4fcc581090cad1230a0d3f6220b6d4f4233212d613ac88c331895b"
+    },
+    {
+      "id": "movement.footstep_stone_03",
+      "wav": "movement/footstep_stone_03.wav",
+      "ogg": "movement/footstep_stone_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 8640,
+      "duration_seconds": 0.18,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.599,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "66844368dcf4ee889d009a5b5407dd443fb1f46be9ba29e6a9d59071f8c200c7",
+      "sha256_ogg": "d6a7d88fa981e2a6990bfd848724b6673b2d6a9680e1e34e35f7b47bd0d99cfa"
+    },
+    {
+      "id": "movement.horse_hoof_01",
+      "wav": "movement/horse_hoof_01.wav",
+      "ogg": "movement/horse_hoof_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 16800,
+      "duration_seconds": 0.35,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -22.806,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "bbcc884a4f55b088270a7b7a372f1d58e9d602b7ef64c61164c635a4cd769530",
+      "sha256_ogg": "d1f7f2b425fae52bcfa5a5b2c00871d5eb0d77808b80ffcd5ea93e61084b9a69"
+    },
+    {
+      "id": "movement.horse_hoof_02",
+      "wav": "movement/horse_hoof_02.wav",
+      "ogg": "movement/horse_hoof_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 16800,
+      "duration_seconds": 0.35,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -23.388,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "110f89dbb4d5be2351e251c23368ea205e2df5da3227396c65649780abcfe002",
+      "sha256_ogg": "884eb53c0c42418255e01a659ac6eed002dd4d5dfc42f12b0f2cef1a7d1da5e9"
+    },
+    {
+      "id": "movement.horse_hoof_03",
+      "wav": "movement/horse_hoof_03.wav",
+      "ogg": "movement/horse_hoof_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 16800,
+      "duration_seconds": 0.35,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -22.849,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "a37c7dbc5c5d61f5ed8dfd6878103fc2f968805d2ddcc078b4c099bec360dd60",
+      "sha256_ogg": "30ddcc96dbaf0c6642e0b4eebba79ad6fe3be6ec4c59c54d90cfc41e0becb4a1"
+    },
+    {
+      "id": "movement.wheel_01",
+      "wav": "movement/wheel_01.wav",
+      "ogg": "movement/wheel_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31200,
+      "duration_seconds": 0.65,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -20.073,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "16397026b470926d738fc6f97e7b16abd5e45020a5a052a0f55531546c4dffa3",
+      "sha256_ogg": "ed9ea642078fba1245dc1971386041aa39e3c7d5c2a6efc646ba75294c92e623"
+    },
+    {
+      "id": "movement.wheel_02",
+      "wav": "movement/wheel_02.wav",
+      "ogg": "movement/wheel_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31200,
+      "duration_seconds": 0.65,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -19.911,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "ae6a34d334f8006405003a45c626d41f7706a8aec98ec398826fa3017267dfb1",
+      "sha256_ogg": "7be7f889567de89d07a1ae8ddb15abd23f110bae09edf44add13c4dab027a6cb"
+    },
+    {
+      "id": "movement.wheel_03",
+      "wav": "movement/wheel_03.wav",
+      "ogg": "movement/wheel_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31200,
+      "duration_seconds": 0.65,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -20.975,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "370d54776b95405aef5e832547c6fa60c7b7677cc770351daca77214b510fb5c",
+      "sha256_ogg": "5428b63a4fae7e206a4e3a4758d1428c357db837e6e9349126b5296c9a2e5b9b"
+    },
+    {
+      "id": "combat.sword_swing_01",
+      "wav": "combat/sword_swing_01.wav",
+      "ogg": "combat/sword_swing_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 12480,
+      "duration_seconds": 0.26,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -21.233,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "8ce6e31e734d5521a9c9f4e731d5e25cbc796a1925037828cec495d083759821",
+      "sha256_ogg": "192e5382c285048baedb1e8b0ab054740da2a2364bb0a6e5e218d765943d02d3"
+    },
+    {
+      "id": "combat.sword_swing_02",
+      "wav": "combat/sword_swing_02.wav",
+      "ogg": "combat/sword_swing_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 12480,
+      "duration_seconds": 0.26,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -20.54,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "5322f0e288b3e0eff112d733c95e9e3d7c747b40ffc3406a12c82b780a449e3b",
+      "sha256_ogg": "a895ac03e48a2d9b2130abc7e1332009e2088e3b530fe889bbfd385a1d2ebfab"
+    },
+    {
+      "id": "combat.sword_swing_03",
+      "wav": "combat/sword_swing_03.wav",
+      "ogg": "combat/sword_swing_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 12480,
+      "duration_seconds": 0.26,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -20.319,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "fd0f7b4466ebcea3d63d7a50fcf77ff58474362fda46859abb6d358240865d14",
+      "sha256_ogg": "a5320f433d7eb0b4c379c2accfa65c527b042f19c919a707176226fbb6bd8fcc"
+    },
+    {
+      "id": "combat.spear_thrust_01",
+      "wav": "combat/spear_thrust_01.wav",
+      "ogg": "combat/spear_thrust_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 12480,
+      "duration_seconds": 0.26,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -21.268,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "870ad0d84204a82b2bffc1e75263f1a3ad8e11a0369758f4d9114b3133ec2884",
+      "sha256_ogg": "cc1ed7f779410f27c87c1bde3139c46f7e86589863120a6cec8a154dfc8b37bd"
+    },
+    {
+      "id": "combat.spear_thrust_02",
+      "wav": "combat/spear_thrust_02.wav",
+      "ogg": "combat/spear_thrust_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 12480,
+      "duration_seconds": 0.26,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -21.159,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "bce39a4db05edd5a266626b6af5dc6ae2e9b6ac81e57ff955f19a9026dc530be",
+      "sha256_ogg": "09ea5760a822fb77daf6156d88fae4d76e8ff711110097b61c73260c7b5ecb01"
+    },
+    {
+      "id": "combat.spear_thrust_03",
+      "wav": "combat/spear_thrust_03.wav",
+      "ogg": "combat/spear_thrust_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 12480,
+      "duration_seconds": 0.26,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -21.722,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "7d3dd85af23e7dc54c22ede344638716c9b052dff6ae22cff539c4ec06695b0f",
+      "sha256_ogg": "045186d562117e97370910742a0442bfe3226952f5b44016cb03fff4004c6934"
+    },
+    {
+      "id": "combat.impact_metal_01",
+      "wav": "combat/impact_metal_01.wav",
+      "ogg": "combat/impact_metal_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31200,
+      "duration_seconds": 0.65,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -25.251,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "9f16eb4ca98bbf5a5c811e642ff67ce8f6bceac42fe0c7350a3f2c53a65dde0d",
+      "sha256_ogg": "05eb310aadfab1a9e7beef814942a9295ba998ee4919bcb2298523ce49dd6f68"
+    },
+    {
+      "id": "combat.impact_metal_02",
+      "wav": "combat/impact_metal_02.wav",
+      "ogg": "combat/impact_metal_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31200,
+      "duration_seconds": 0.65,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -25.4,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "420ff7a77af5c581c1ce94fd8a738e1dfe8e30f0a7bac228272440359b1c547f",
+      "sha256_ogg": "03ed16711fbfe66c51d4f424b406a4c405bac100e7751e0e43048cca38a06664"
+    },
+    {
+      "id": "combat.impact_metal_03",
+      "wav": "combat/impact_metal_03.wav",
+      "ogg": "combat/impact_metal_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31200,
+      "duration_seconds": 0.65,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -24.548,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "66a2580f5578a7ae6c0d2cde44278024a446372984f0c1a5b9d3a4f21d930135",
+      "sha256_ogg": "6f6d7c4cde26bb20e7489f864fe5be9eee22197dde786f4bf94ad807ec4b3251"
+    },
+    {
+      "id": "combat.impact_soft_01",
+      "wav": "combat/impact_soft_01.wav",
+      "ogg": "combat/impact_soft_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 9600,
+      "duration_seconds": 0.2,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.529,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "e1abd14b9343d351e7d5815dd68e4aa87cc3d2a00f14b27e6b936c631cdd6cc2",
+      "sha256_ogg": "05bda218d418d218db1ed37ac885af695d59809e50a84243b4087fc119aebe0c"
+    },
+    {
+      "id": "combat.impact_soft_02",
+      "wav": "combat/impact_soft_02.wav",
+      "ogg": "combat/impact_soft_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 9600,
+      "duration_seconds": 0.2,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -23.223,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "34e0cef3eda246a3c6e46b69644905ab4e730a5efa22d3451a548f92ccd2f506",
+      "sha256_ogg": "b6c49705b1602d62b6f88c68dd1dade555b631f7bcb0641838db97eabad984bd"
+    },
+    {
+      "id": "combat.impact_soft_03",
+      "wav": "combat/impact_soft_03.wav",
+      "ogg": "combat/impact_soft_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 9600,
+      "duration_seconds": 0.2,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -22.998,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "3f85c17714ca3289b1f06bbe95f3ed1bf5206c59b2c7613793d9bd597ec9e46a",
+      "sha256_ogg": "58c04c8ebd31ff4024a1e6544eeddd1e70f367697b6b1978f66b181447d78755"
+    },
+    {
+      "id": "combat.bow_release_01",
+      "wav": "combat/bow_release_01.wav",
+      "ogg": "combat/bow_release_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 16800,
+      "duration_seconds": 0.35,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -17.302,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "81e58318f72bcaeb3a657a13b7932cbd3e73861a7b08223c3aa29ee5b378c2ee",
+      "sha256_ogg": "e9c912576d7557694e69948ad339acd6545ea1d4b043e4d94ac789b67bce8c99"
+    },
+    {
+      "id": "combat.bow_release_02",
+      "wav": "combat/bow_release_02.wav",
+      "ogg": "combat/bow_release_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 16800,
+      "duration_seconds": 0.35,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -17.937,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "8c291a8c7ab94f3ce033f11ac97b28b03635f59e502a069ddb41623f892c9abe",
+      "sha256_ogg": "b2c17a2f2e9d30dc8e04a367403ed2205f5c6cccfb9827684a64e44ab5f10717"
+    },
+    {
+      "id": "combat.bow_release_03",
+      "wav": "combat/bow_release_03.wav",
+      "ogg": "combat/bow_release_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 16800,
+      "duration_seconds": 0.35,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -17.149,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "1fab1cb8f130170dfb46b5fe0419e8ccaf7e2cd3c01e17685f87c3874f714106",
+      "sha256_ogg": "a22ec9816fb184ba76a36a0ec6c873464e7683b84d6f93fdd2961a55e8d4de28"
+    },
+    {
+      "id": "combat.arrow_wood_01",
+      "wav": "combat/arrow_wood_01.wav",
+      "ogg": "combat/arrow_wood_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 13440,
+      "duration_seconds": 0.28,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -24.51,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "7d276cc5443d39087858d60a7d1b7eb62164b6acfad9899b336efad54c840b4b",
+      "sha256_ogg": "84fe6daa081716cf158fe7a72c034451cd690fac0bfc7b2115a427296611fafb"
+    },
+    {
+      "id": "combat.arrow_wood_02",
+      "wav": "combat/arrow_wood_02.wav",
+      "ogg": "combat/arrow_wood_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 13440,
+      "duration_seconds": 0.28,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.433,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "0098c8ac4feca6ad09d97a9cb51b783b2433ad33e89000f7a4cc0ded509fbffe",
+      "sha256_ogg": "5fa5a0d762df1757d36d0bf64470c4ec28da12f74aa77cdd64c82a59b409d301"
+    },
+    {
+      "id": "combat.arrow_wood_03",
+      "wav": "combat/arrow_wood_03.wav",
+      "ogg": "combat/arrow_wood_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 13440,
+      "duration_seconds": 0.28,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -25.403,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "50355351898532099aabfb8f1a7079761834815618a021db7e31c1e3299f265d",
+      "sha256_ogg": "93475755efe6baa3ae72e06e9f647e6a02ed8595ee1cc918fba94a1f96ba407f"
+    },
+    {
+      "id": "combat.arrow_ground_01",
+      "wav": "combat/arrow_ground_01.wav",
+      "ogg": "combat/arrow_ground_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 10560,
+      "duration_seconds": 0.22,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -23.089,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "c07c02775dfad1111cada2886f737dd4ae387041a8170876858ee6e7a922b3af",
+      "sha256_ogg": "dd5e07ca0eb2c9180c1db4324bac252a45307141414eda0bdafe66ad1ce2f517"
+    },
+    {
+      "id": "combat.arrow_ground_02",
+      "wav": "combat/arrow_ground_02.wav",
+      "ogg": "combat/arrow_ground_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 10560,
+      "duration_seconds": 0.22,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.032,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "b43ccc532e33426e15bf54169f1ae5764f692a0ddf0e4f1ee18a6fadf7926fde",
+      "sha256_ogg": "edcb58ddcca08869631d8166e824aba85180d5988bb9ffb15f2b8676f4f7e51b"
+    },
+    {
+      "id": "combat.arrow_ground_03",
+      "wav": "combat/arrow_ground_03.wav",
+      "ogg": "combat/arrow_ground_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 10560,
+      "duration_seconds": 0.22,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -22.264,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "e00bbb2737b0463b2b35f10468212918e9481f859e3440d578b696f70520a954",
+      "sha256_ogg": "654bf6451261adec878c387b6aedd23c63d9bc861606250f8b37e1f3127d4819"
+    },
+    {
+      "id": "combat.crossbow_release_01",
+      "wav": "combat/crossbow_release_01.wav",
+      "ogg": "combat/crossbow_release_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 19200,
+      "duration_seconds": 0.4,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -19.724,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "f39de4afbe743699ce8c28e46b815400ecf65e3d05270a679af7c14b56c00c73",
+      "sha256_ogg": "dbd4136b40c0b6245301f0bcfe6a16315d4d4f6f56bcc7c3de083d8983349c1d"
+    },
+    {
+      "id": "combat.crossbow_release_02",
+      "wav": "combat/crossbow_release_02.wav",
+      "ogg": "combat/crossbow_release_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 19200,
+      "duration_seconds": 0.4,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -20.343,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "967800f19b091d7b138702a78af8a1b9792253e7805f46ddeda767a2f3f49003",
+      "sha256_ogg": "969c252f4cf63a08fadf0d01c65e60b95caeb82a6081f636b323341ef784f527"
+    },
+    {
+      "id": "combat.crossbow_release_03",
+      "wav": "combat/crossbow_release_03.wav",
+      "ogg": "combat/crossbow_release_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 19200,
+      "duration_seconds": 0.4,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -20.335,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "97543ebd7e8911e0f05945ee747463acfcd374a48ab147eb8e29c224d207bad6",
+      "sha256_ogg": "34d1b847f20637fcb646a4253ddfae06358c62103cc2db88f99bdff0a4abeca4"
+    },
+    {
+      "id": "combat.handgun_shot_01",
+      "wav": "combat/handgun_shot_01.wav",
+      "ogg": "combat/handgun_shot_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31200,
+      "duration_seconds": 0.65,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -24.319,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "2885688f65098398325eb4b5aac416a1fde68b9befc2de72138cf347e1d06e0e",
+      "sha256_ogg": "787af9e7b1afc7fb1ec5c95e33ad4d5987ae4ee64dabed5d176820a5c07dd444"
+    },
+    {
+      "id": "combat.handgun_shot_02",
+      "wav": "combat/handgun_shot_02.wav",
+      "ogg": "combat/handgun_shot_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31200,
+      "duration_seconds": 0.65,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -25.699,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "1f72706ce7b889773b883aa674d15e2251d6dd67cbadd232449599e730df4f81",
+      "sha256_ogg": "edc3e60af4596ac76c0e0393a871fa030e649501ccffed524e82a8a011c22169"
+    },
+    {
+      "id": "combat.handgun_shot_03",
+      "wav": "combat/handgun_shot_03.wav",
+      "ogg": "combat/handgun_shot_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31200,
+      "duration_seconds": 0.65,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -25.743,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "81f2d5f188d4979d89b167fdc45e095a4e7dee5f42c38198b192322da4e95700",
+      "sha256_ogg": "19404925eae25f2bcd157d7284002000a07c8663f65307969a4cec9c78d68584"
+    },
+    {
+      "id": "combat.unit_death_01",
+      "wav": "combat/unit_death_01.wav",
+      "ogg": "combat/unit_death_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 28800,
+      "duration_seconds": 0.6,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.914,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "1d3b4174d1b456da0b819644bd8723c80cfd0a64fd8b4e9ebb918594cef775d1",
+      "sha256_ogg": "52ccbae8d9fcc41773094c1442943e016d9c1d00bccdccd978ef96976eaf75c0"
+    },
+    {
+      "id": "combat.unit_death_02",
+      "wav": "combat/unit_death_02.wav",
+      "ogg": "combat/unit_death_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 28800,
+      "duration_seconds": 0.6,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.194,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "25cf651e6563c63ad6d68a9a87709c707beae48fd876a00b6f72cfc63cbac1f0",
+      "sha256_ogg": "ed6346fda2196cb2badcabfe6d641cd322edf006fcd5577ec9cdfa287f62b6f5"
+    },
+    {
+      "id": "combat.unit_death_03",
+      "wav": "combat/unit_death_03.wav",
+      "ogg": "combat/unit_death_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 28800,
+      "duration_seconds": 0.6,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.257,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "46dda983a4a593b3cfaf267da151524bc975691edd4e7b16a32e5421e2788202",
+      "sha256_ogg": "295b5627dfa46442397c73df97e1301510515688d4cf341313eb50f3b2157015"
+    },
+    {
+      "id": "siege.ram_hit_01",
+      "wav": "siege/ram_hit_01.wav",
+      "ogg": "siege/ram_hit_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 45600,
+      "duration_seconds": 0.95,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -27.966,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "3d8054f749d7eddba529d3ae2a915654662a39d70065d54bd6e2cd2412d751ed",
+      "sha256_ogg": "0bf8855e5f151d9db9312483ceaf97434d7cc63b8c6e78265224def02fc1033b"
+    },
+    {
+      "id": "siege.ram_hit_02",
+      "wav": "siege/ram_hit_02.wav",
+      "ogg": "siege/ram_hit_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 45600,
+      "duration_seconds": 0.95,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -27.555,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "c8656b4a50ec1f92eab661dffcde13f6f1fcb34d70ba6a9640a1776bef8850f4",
+      "sha256_ogg": "600d59f0d6d66ee02f6fb6b98a6f2538be4ed775c304268c31947b6b85b87d4f"
+    },
+    {
+      "id": "siege.ram_hit_03",
+      "wav": "siege/ram_hit_03.wav",
+      "ogg": "siege/ram_hit_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 45600,
+      "duration_seconds": 0.95,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -29.871,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "15a7f4531313d5778003fdec159b67de418ef7d29a8ae0ded7d39dd63066583d",
+      "sha256_ogg": "8943634c1ed201567645f22f419cbff675e880a3dc06392914b8c34a49d1480b"
+    },
+    {
+      "id": "siege.catapult_launch_01",
+      "wav": "siege/catapult_launch_01.wav",
+      "ogg": "siege/catapult_launch_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 40800,
+      "duration_seconds": 0.85,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -26.725,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "34a3737e4e767b64b9adfb5c6ae2efc263411972dca25c2cc75e9d09d1c50202",
+      "sha256_ogg": "e539982ddbeac2eef02cbf11ebc6439f7853236d422ea4072b3b94186b7578a0"
+    },
+    {
+      "id": "siege.catapult_launch_02",
+      "wav": "siege/catapult_launch_02.wav",
+      "ogg": "siege/catapult_launch_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 40800,
+      "duration_seconds": 0.85,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -26.787,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "ee04e0567d74365d70df824e538fccb069633c0604ef256ec1b5b97c4393ca7a",
+      "sha256_ogg": "01141396a49cf8bdc2436a2806795b8eb4ec35348df31a1411e34962142b2edd"
+    },
+    {
+      "id": "siege.rock_impact_01",
+      "wav": "siege/rock_impact_01.wav",
+      "ogg": "siege/rock_impact_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 52800,
+      "duration_seconds": 1.1,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -26.11,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "8476e9424e472a49a79eec9ac2d5cf8514c129786dfd0f256e410eee8c94e1c5",
+      "sha256_ogg": "0db40935c9f97c025d8c07fb829a8f0974a21e49d1fd4b2aeb1c40e1c370a5ab"
+    },
+    {
+      "id": "siege.rock_impact_02",
+      "wav": "siege/rock_impact_02.wav",
+      "ogg": "siege/rock_impact_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 52800,
+      "duration_seconds": 1.1,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -26.261,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "129d9dd2910203f75570637f796a4d30e368dd109fefd3c01d66d814720e2eab",
+      "sha256_ogg": "6c7e58a0912ea70fcba85a7b210351e9de8b6d2e3ad8cdda8ed53a32afbb8f5a"
+    },
+    {
+      "id": "siege.rock_impact_03",
+      "wav": "siege/rock_impact_03.wav",
+      "ogg": "siege/rock_impact_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 52800,
+      "duration_seconds": 1.1,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -25.593,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "0553d01fa69bae236b8ca43b3fc3bffd9babe821b32992ef03c3be652017b596",
+      "sha256_ogg": "7b78dc16ec3416cfe54a01c9c4f10af868958217b87eba47751bb8f297b3b562"
+    },
+    {
+      "id": "siege.trebuchet_launch_01",
+      "wav": "siege/trebuchet_launch_01.wav",
+      "ogg": "siege/trebuchet_launch_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 55200,
+      "duration_seconds": 1.15,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -27.68,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "3cd79917f4bb5a701842c18e5dd7065a3734dc090cdc53ef0d24da11d277eea0",
+      "sha256_ogg": "f5e1f9ec555023f2726e212d91f8c6943d0a4dc8e46add03caaeeb53404eea6c"
+    },
+    {
+      "id": "siege.trebuchet_launch_02",
+      "wav": "siege/trebuchet_launch_02.wav",
+      "ogg": "siege/trebuchet_launch_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 55200,
+      "duration_seconds": 1.15,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -27.086,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "6bfca2b29eebe32de5b6ca853020c189f9053321b1fabb16320ee5c39cddae4b",
+      "sha256_ogg": "356ce04177a528d5b108bb95cee5508ea4a61ca6f69c0d9571d9188b8dfe502b"
+    },
+    {
+      "id": "siege.cannon_shot_01",
+      "wav": "siege/cannon_shot_01.wav",
+      "ogg": "siege/cannon_shot_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 86400,
+      "duration_seconds": 1.8,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -25.939,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "23af8da541194b0fe543dcd2c723fcd2f166997fff70dba22673baa4d91d8b74",
+      "sha256_ogg": "cc9072fea8d4d2afac7553fe268818d3060def99af0fff3fe79215e6de043ba0"
+    },
+    {
+      "id": "siege.cannon_shot_02",
+      "wav": "siege/cannon_shot_02.wav",
+      "ogg": "siege/cannon_shot_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 86400,
+      "duration_seconds": 1.8,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.969,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "d89bea8360dc2ac09e026a22856a17f2a19dbdeede650f612583f8d8f29d9a51",
+      "sha256_ogg": "1cf05ef17180ea45c4e1a6ebf5a4782a335ad16f68a64dbb1ab0d24ef8cbfa8e"
+    },
+    {
+      "id": "siege.explosion_01",
+      "wav": "siege/explosion_01.wav",
+      "ogg": "siege/explosion_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 69600,
+      "duration_seconds": 1.45,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -26.441,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "eac844df2ac25415ccb459303a7ad174c019412380a67c352d43eb973a1a6d1f",
+      "sha256_ogg": "74c9ab08cbdac51b793e323bed25319296cbfb25817bd6062fe35e814e376d05"
+    },
+    {
+      "id": "siege.explosion_02",
+      "wav": "siege/explosion_02.wav",
+      "ogg": "siege/explosion_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 69600,
+      "duration_seconds": 1.45,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -26.101,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "b68836e962599b15e7d8eca115cfac93075ce23a6fd77a17c19274b0cbfaa2e4",
+      "sha256_ogg": "a6fb745ec6374dfa6ff1867718136884b4e507f9827278947019ce7665758908"
+    },
+    {
+      "id": "siege.building_collapse_01",
+      "wav": "siege/building_collapse_01.wav",
+      "ogg": "siege/building_collapse_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 105600,
+      "duration_seconds": 2.2,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -25.694,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "a4c88f1f47d226de9325945038cdaa32e12e5c0bd1f18478d7dfa9c56f9b12e5",
+      "sha256_ogg": "483de2e5653b392ff192f4a720c7253cee8bf87d6cee01bd78e167dd3d31881e"
+    },
+    {
+      "id": "siege.building_collapse_02",
+      "wav": "siege/building_collapse_02.wav",
+      "ogg": "siege/building_collapse_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 105600,
+      "duration_seconds": 2.2,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -25.518,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "fde997661f27dfc1cca8e0dc1baac289fdd1047d08e780627e4bbf10f38ec953",
+      "sha256_ogg": "01ada67c490d7a5f87d30208ca2a12470e1c04163100d5618927cb31a110759d"
+    },
+    {
+      "id": "monastery.heal_01",
+      "wav": "monastery/heal_01.wav",
+      "ogg": "monastery/heal_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 45120,
+      "duration_seconds": 0.94,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -18.67,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "75fc43cb49362c0c07ff0d3fcb7a0ee2b7e533a0acf6372570db60602379bf04",
+      "sha256_ogg": "f61b927c3df1aabbde9c8c08275d28da85bb07e79e51d59439a87f2a61d970e8"
+    },
+    {
+      "id": "monastery.heal_02",
+      "wav": "monastery/heal_02.wav",
+      "ogg": "monastery/heal_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 47616,
+      "duration_seconds": 0.992,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -18.499,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "d8e034e8240fda4998a6ee68f4bc85a2482a3b8eedc78bab752e8d2b336dbe57",
+      "sha256_ogg": "52fec962212daecf7c3ead0ed975331044aae9fe5c946462137dc033549aabe6"
+    },
+    {
+      "id": "monastery.conversion_start_01",
+      "wav": "monastery/conversion_start_01.wav",
+      "ogg": "monastery/conversion_start_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 86400,
+      "duration_seconds": 1.8,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -14.705,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "b3e92d11a9d30246905ff31d60844e8eb6868849cff342497b6949d315fe4b73",
+      "sha256_ogg": "fefd1068465d615663691fbd80258fa1cd0b1ed37ebddc5f69e5ba2a7c06b491"
+    },
+    {
+      "id": "monastery.conversion_complete_01",
+      "wav": "monastery/conversion_complete_01.wav",
+      "ogg": "monastery/conversion_complete_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 56160,
+      "duration_seconds": 1.17,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -20.365,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "d5ae4a27274b6ffb196c801abae4fba603d83d274c3684673f56598c5c841cb2",
+      "sha256_ogg": "67ff91b280bad6add22d337d412f50433e9effad22ae3431e79652c94b8d1b21"
+    },
+    {
+      "id": "monastery.relic_pickup_01",
+      "wav": "monastery/relic_pickup_01.wav",
+      "ogg": "monastery/relic_pickup_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 62400,
+      "duration_seconds": 1.3,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -21.0,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "d7e9a4e8730f7825363d89059fb9de41142d5c6e72823fa06799e069e7f961ad",
+      "sha256_ogg": "6d7f9de88b71627872881c627d09c8106ae6d51f0c17fc5f2db2f30a92cae1a3"
+    },
+    {
+      "id": "naval.oar_splash_01",
+      "wav": "naval/oar_splash_01.wav",
+      "ogg": "naval/oar_splash_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31200,
+      "duration_seconds": 0.65,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -20.59,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "3b5ed14a4fdea6f36b4f7bc1a0dd25630d51ac45836450605bfdad6703897344",
+      "sha256_ogg": "81566599c797178382da434076d5cdd6b8e7b34036de5e9cae90d5d106404152"
+    },
+    {
+      "id": "naval.oar_splash_02",
+      "wav": "naval/oar_splash_02.wav",
+      "ogg": "naval/oar_splash_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31200,
+      "duration_seconds": 0.65,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -21.61,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "379d8e478f8b5f824a6690551e2989b2816654c373ee8b549dd8f5743e351399",
+      "sha256_ogg": "b8a3709878899a70833ecbef8ce3d0284991e4a4ba9b880ed26bc5c66db004f9"
+    },
+    {
+      "id": "naval.oar_splash_03",
+      "wav": "naval/oar_splash_03.wav",
+      "ogg": "naval/oar_splash_03.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 31200,
+      "duration_seconds": 0.65,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -21.121,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "1c752e62a7e5557d6ce8c47a68d64e3d3cbfcb1e28c71b858d0bee402a0caba8",
+      "sha256_ogg": "9639facee17b47a2e2c4f167d8db3a8c57bf4894c8676780d03a86db7848b5b3"
+    },
+    {
+      "id": "naval.cannon_shot_01",
+      "wav": "naval/cannon_shot_01.wav",
+      "ogg": "naval/cannon_shot_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 86400,
+      "duration_seconds": 1.8,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -27.033,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "f84fabe9325bcb0716c41901ba241d68a55817a3f75a000c308234f31bbec836",
+      "sha256_ogg": "7eec6c24a9597a6e4489d9e8c06e94dea718df05049d9c7efeaee394a7b8704d"
+    },
+    {
+      "id": "naval.cannon_shot_02",
+      "wav": "naval/cannon_shot_02.wav",
+      "ogg": "naval/cannon_shot_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 86400,
+      "duration_seconds": 1.8,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -26.106,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "91b9a6ff31f8bec4fc11fd58f8f84a81509da79e1ddfc8ef2188bde0cc82441a",
+      "sha256_ogg": "268317de64705ec1d14568046d43d87126db6a3d468054e68aa3eeedf7cb4486"
+    },
+    {
+      "id": "naval.fire_attack_01",
+      "wav": "naval/fire_attack_01.wav",
+      "ogg": "naval/fire_attack_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 43200,
+      "duration_seconds": 0.9,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -21.003,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "e2c85d25c9f04d279152c6b65142e498fc96f6ab8f8302395cb566516f00ed48",
+      "sha256_ogg": "61c5db4024b2405eba16d6aef5dd81f8e663791e174ba3c255946077303f9db2"
+    },
+    {
+      "id": "naval.fire_attack_02",
+      "wav": "naval/fire_attack_02.wav",
+      "ogg": "naval/fire_attack_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 43200,
+      "duration_seconds": 0.9,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -21.52,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "b7f4280687339a7efe53273ac13e2c0f0f620f19f801f10c725022ea1bd68fba",
+      "sha256_ogg": "c5bfd6bcb881e7cfe229d58000648b5f3dea81c6ff31c875eeaff28a4e101cbb"
+    },
+    {
+      "id": "naval.ship_sink_01",
+      "wav": "naval/ship_sink_01.wav",
+      "ogg": "naval/ship_sink_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 105600,
+      "duration_seconds": 2.2,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -29.173,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "1a7cc9c3c211d2008b71427792d9b5b5ccde5d9c429cfb1230b6adbf0900b6a2",
+      "sha256_ogg": "1e4fbae407e888fef768a5a14182d4eb6fc5cbb7a08c9af8f48cc2efaa40fccf"
+    },
+    {
+      "id": "naval.ship_sink_02",
+      "wav": "naval/ship_sink_02.wav",
+      "ogg": "naval/ship_sink_02.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 105600,
+      "duration_seconds": 2.2,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -30.036,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "2eec7eab0ca954c5c7e30f7c01b2055e4f01b6b1604805800cd85f17c287bd34",
+      "sha256_ogg": "0899554b6ba56baf2c0d0e93ade737ab27ed645ba5ca2b179b2c055385b771e3"
+    },
+    {
+      "id": "results.victory_01",
+      "wav": "results/victory_01.wav",
+      "ogg": "results/victory_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 144000,
+      "duration_seconds": 3.0,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -17.974,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "215b83201cc9ca5597f6dc236d226ad991006f6c1879beeec46f9c1bbddd1820",
+      "sha256_ogg": "fa76b9c474b8b0c4401f8d31d6915c07b63da28d0f12d60c73a6978d527a7712"
+    },
+    {
+      "id": "results.defeat_01",
+      "wav": "results/defeat_01.wav",
+      "ogg": "results/defeat_01.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 142080,
+      "duration_seconds": 2.96,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -18.716,
+      "loop": false,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "e8a752ce8e5902aa402ce0f1c1affd85a657ec59651d225c250452874586ce43",
+      "sha256_ogg": "3466d0af6bd4e0b1e76ed7a30c1cd4de14bfb3c8e84838caa4f043a11463716b"
+    },
+    {
+      "id": "ambience.forest_loop",
+      "wav": "ambience/forest_loop.wav",
+      "ogg": "ambience/forest_loop.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 768000,
+      "duration_seconds": 16.0,
+      "channels": 2,
+      "peak_dbfs": -12.007,
+      "rms_dbfs": -26.33,
+      "loop": true,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "27ae5b12ca555284a6382ebf774cc5d45bd8939300407d420883bc987e36393d",
+      "sha256_ogg": "dec1ba0c0d2a8e07208a1c5b2e6fb16b8c0c9bc59acfabd49b102836abd00167",
+      "loop_start_frame": 0,
+      "loop_end_frame": 768000,
+      "boundary_step": 0.0123291015625
+    },
+    {
+      "id": "ambience.river_loop",
+      "wav": "ambience/river_loop.wav",
+      "ogg": "ambience/river_loop.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 768000,
+      "duration_seconds": 16.0,
+      "channels": 2,
+      "peak_dbfs": -12.007,
+      "rms_dbfs": -28.314,
+      "loop": true,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "382773483fa678c1a833c2c057aad068f93f7c08a65adac86b1c544acf2c9a1c",
+      "sha256_ogg": "28e58d15e583d5165750389ca29fe7905655f592a3fd6ad6e319d8683451747c",
+      "loop_start_frame": 0,
+      "loop_end_frame": 768000,
+      "boundary_step": 0.01025390625
+    },
+    {
+      "id": "ambience.sea_loop",
+      "wav": "ambience/sea_loop.wav",
+      "ogg": "ambience/sea_loop.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 768000,
+      "duration_seconds": 16.0,
+      "channels": 2,
+      "peak_dbfs": -12.007,
+      "rms_dbfs": -28.375,
+      "loop": true,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "2ad77a917c5bb99f6111dc1c9530f9a0ab57728169de7ca964138f2ebf03f648",
+      "sha256_ogg": "db38cd6423d1def1dd496ca05decd878fce2dcd1d1e0548935e8690b7002e3af",
+      "loop_start_frame": 0,
+      "loop_end_frame": 768000,
+      "boundary_step": 0.002227783203125
+    },
+    {
+      "id": "ambience.fire_loop",
+      "wav": "ambience/fire_loop.wav",
+      "ogg": "ambience/fire_loop.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 768000,
+      "duration_seconds": 16.0,
+      "channels": 2,
+      "peak_dbfs": -12.006,
+      "rms_dbfs": -29.027,
+      "loop": true,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "4710bd4464f5c5fc285541d3bf902c181ef78686930d698196dea03047f64e7f",
+      "sha256_ogg": "16ca6bb222b31bacc157287240f860f9199a1cf68e075d6f3c72173a7595494c",
+      "loop_start_frame": 0,
+      "loop_end_frame": 768000,
+      "boundary_step": 0.00299072265625
+    },
+    {
+      "id": "music.explore_loop",
+      "wav": "music/explore_loop.wav",
+      "ogg": "music/explore_loop.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 1536000,
+      "duration_seconds": 32.0,
+      "channels": 2,
+      "peak_dbfs": -12.007,
+      "rms_dbfs": -26.85,
+      "loop": true,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "114d5569e4ed88f8c6a003f95c8918965839509e32e0d87df0f0c01e2b85f38b",
+      "sha256_ogg": "56815c750de222afc1bf4fa135fb4a0c6aeee9e404c8073e650592b21346cf92",
+      "loop_start_frame": 0,
+      "loop_end_frame": 1536000,
+      "boundary_step": 0.000640869140625
+    },
+    {
+      "id": "music.battle_loop",
+      "wav": "music/battle_loop.wav",
+      "ogg": "music/battle_loop.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 1536000,
+      "duration_seconds": 32.0,
+      "channels": 2,
+      "peak_dbfs": -12.007,
+      "rms_dbfs": -32.132,
+      "loop": true,
+      "source": "original_procedural_dsp",
+      "sha256_wav": "035038bf817aef59682964bdfb6cd7bbf8f52ca549c4909e72092b7ffdf74523",
+      "sha256_ogg": "a2f58ca7cc6b6b5d481a33aefdae66f595cd84fc9b36485b557e399b1c2bc53b",
+      "loop_start_frame": 0,
+      "loop_end_frame": 1536000,
+      "boundary_step": 0.000244140625
+    },
+    {
+      "id": "voice_placeholder.villager_select",
+      "wav": "voice_placeholder/villager_select.wav",
+      "ogg": "voice_placeholder/villager_select.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 38627,
+      "duration_seconds": 0.804729,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -25.44,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "83f64448eefa8fd58b53a2dc7848ea234f08d846c5dffc0ad7bfa00cc69a6847",
+      "sha256_ogg": "14eb030015f2d30c8207e229891bd173219973b6654b0ae1c36cc46da3f14411"
+    },
+    {
+      "id": "voice_placeholder.villager_move",
+      "wav": "voice_placeholder/villager_move.wav",
+      "ogg": "voice_placeholder/villager_move.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 55439,
+      "duration_seconds": 1.154979,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -23.392,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "c260f17af818e799e3738a26f7e0b3af971b7bda1e28e68ec46402d1f9c321cb",
+      "sha256_ogg": "d1d6f1e7a6cc64b18a87280b4e2a2c99aae668ca137c4c9860be2307552a13e6"
+    },
+    {
+      "id": "voice_placeholder.villager_build",
+      "wav": "voice_placeholder/villager_build.wav",
+      "ogg": "voice_placeholder/villager_build.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 46392,
+      "duration_seconds": 0.9665,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.137,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "8588a3520a2e1807ddf1270a1f95fedf313ec64ed2673188a0f9b20c5bcb22a4",
+      "sha256_ogg": "6d34a94af3a1d6608920e63d2f92c6ee67a14c5a5fb928aeaf2abaa4c2bc3a1a"
+    },
+    {
+      "id": "voice_placeholder.villager_gather",
+      "wav": "voice_placeholder/villager_gather.wav",
+      "ogg": "voice_placeholder/villager_gather.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 49498,
+      "duration_seconds": 1.031208,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -25.629,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "41a52a9eaf324513e529ec5655ebc019323e65c7f6ea69ec7aac934dc486d983",
+      "sha256_ogg": "762746aa83484050ce526cac47ef0c58d0ccee354904a078d0221c5cd34f1cde"
+    },
+    {
+      "id": "voice_placeholder.villager_repair",
+      "wav": "voice_placeholder/villager_repair.wav",
+      "ogg": "voice_placeholder/villager_repair.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 68065,
+      "duration_seconds": 1.418021,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -24.496,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "6c44f4b2ff7728c25d2c615c65ce11f0fb18f66e05f3e0e4f9e58c23f50ff0c3",
+      "sha256_ogg": "1180868761d273f917952e22cd320456fcf2537b25bbb4b5f65afe8dd37535d7"
+    },
+    {
+      "id": "voice_placeholder.soldier_select",
+      "wav": "voice_placeholder/soldier_select.wav",
+      "ogg": "voice_placeholder/soldier_select.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 53954,
+      "duration_seconds": 1.124042,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -25.941,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "cd0fbe8a2bcdafa80afa66f2fb2d1d72d6edd060b13b075bdfb574dbd6ebe490",
+      "sha256_ogg": "70a9c9b790f88512a633083d715c4b7167ef6e944e8248b1a3b12d30f04e6c2b"
+    },
+    {
+      "id": "voice_placeholder.soldier_move",
+      "wav": "voice_placeholder/soldier_move.wav",
+      "ogg": "voice_placeholder/soldier_move.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 56464,
+      "duration_seconds": 1.176333,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -23.201,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "c983c6a1e73f4b36e42a9f0bdad6765ff8f65014940d78d858bd8b735302eeee",
+      "sha256_ogg": "42bfbdc236a6fff7fdb7d3b931887d6575dad69151572500b9825a29b5e00eb0"
+    },
+    {
+      "id": "voice_placeholder.soldier_attack",
+      "wav": "voice_placeholder/soldier_attack.wav",
+      "ogg": "voice_placeholder/soldier_attack.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 52391,
+      "duration_seconds": 1.091479,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -25.483,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "b92fceeef25a560835284d143055ab356e191d4e3c13d55dc8d34c97b501a203",
+      "sha256_ogg": "3b3251c0afe9ac9de3516000e68c44faf82921a21381d97bd40c9d369e5fb6bb"
+    },
+    {
+      "id": "voice_placeholder.cavalry_select",
+      "wav": "voice_placeholder/cavalry_select.wav",
+      "ogg": "voice_placeholder/cavalry_select.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 68282,
+      "duration_seconds": 1.422542,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.776,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "579aef92487b8005ecbab4ee58c674b0262f43b3afcc64bbca951a6be6d18a14",
+      "sha256_ogg": "348b5456aa54210936c452c4e4325a4fb936894889c14113a56b5e09ec1ea648"
+    },
+    {
+      "id": "voice_placeholder.cavalry_move",
+      "wav": "voice_placeholder/cavalry_move.wav",
+      "ogg": "voice_placeholder/cavalry_move.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 50426,
+      "duration_seconds": 1.050542,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -23.981,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "6ebe5e561575d126b8b33b30d005c270099ddc207fec28e5c35a5ae0f01ba7e2",
+      "sha256_ogg": "c23ed39d3e2069ba94c68f8c1550f38878e2adbacc378a913b98b39368e08c2f"
+    },
+    {
+      "id": "voice_placeholder.siege_select",
+      "wav": "voice_placeholder/siege_select.wav",
+      "ogg": "voice_placeholder/siege_select.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 54575,
+      "duration_seconds": 1.136979,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -25.055,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "5affcb3a886f6b7c75c6ca7a09c1b26dee3d0149607caa4691bbfdbdb6efbd38",
+      "sha256_ogg": "c64ef210965167a6fe7f854e199bd7bbdf41cd773d3866ca60f06aed16d046ec"
+    },
+    {
+      "id": "voice_placeholder.siege_attack",
+      "wav": "voice_placeholder/siege_attack.wav",
+      "ogg": "voice_placeholder/siege_attack.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 56388,
+      "duration_seconds": 1.17475,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -27.657,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "ce57bd7f79c1beb7f9b37cfca4d275cc614c784233eb3ef512fc2f1459396b89",
+      "sha256_ogg": "9d75a3a7b3c842db1697f5d47a26891084c89e1b3aa25692420a2d0fcfe1224e"
+    },
+    {
+      "id": "voice_placeholder.monk_select",
+      "wav": "voice_placeholder/monk_select.wav",
+      "ogg": "voice_placeholder/monk_select.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 66045,
+      "duration_seconds": 1.375938,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -25.766,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "14f05ffb5338aad956c2e3648fe8cf3b9283a042e2c95038178777f101798389",
+      "sha256_ogg": "60632458ae88a335b3d7df8e16d6b350df0a44ea1844154fc0e88dfaf79a43ea"
+    },
+    {
+      "id": "voice_placeholder.monk_heal",
+      "wav": "voice_placeholder/monk_heal.wav",
+      "ogg": "voice_placeholder/monk_heal.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 56401,
+      "duration_seconds": 1.175021,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -25.07,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "34b5f16d04dd55fb9959c857dd012a64166ddca0be87d37ab4e20f54a87f5a43",
+      "sha256_ogg": "1f4e8ace7acf34e58f1799a64cf2a0811c8a28f3af0d239b1376863e6425e833"
+    },
+    {
+      "id": "voice_placeholder.under_attack",
+      "wav": "voice_placeholder/under_attack.wav",
+      "ogg": "voice_placeholder/under_attack.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 100644,
+      "duration_seconds": 2.09675,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.992,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "a6f81c93512b12924cdfb90972a8e90b0b32adda225bf91c76f17d6f1a505d0d",
+      "sha256_ogg": "3d5ab1abaed7fb98831196d41752320d3cdfd63228f12a1899be197890d12796"
+    },
+    {
+      "id": "voice_placeholder.population_full",
+      "wav": "voice_placeholder/population_full.wav",
+      "ogg": "voice_placeholder/population_full.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 75558,
+      "duration_seconds": 1.574125,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -23.735,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "dc606520208be0abb934b8abbed9ecca3ef68fbdf20c953e9059acf34056677c",
+      "sha256_ogg": "746397a4defd807d25820fa185f0d1257dd65332bfd3dae11301b9a30a00e2f6"
+    },
+    {
+      "id": "voice_placeholder.not_enough_resources",
+      "wav": "voice_placeholder/not_enough_resources.wav",
+      "ogg": "voice_placeholder/not_enough_resources.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 80103,
+      "duration_seconds": 1.668813,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.473,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "15fb33f81e138cbcf75dbc39c07ff14d1d6a7774ea4c97ee89f491e024686b68",
+      "sha256_ogg": "165766636f1c64d3acd1db097974cfb1e0eb8f0791cbf77fe4dfe2942bdb8222"
+    },
+    {
+      "id": "voice_placeholder.age_complete",
+      "wav": "voice_placeholder/age_complete.wav",
+      "ogg": "voice_placeholder/age_complete.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 81942,
+      "duration_seconds": 1.707125,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -25.05,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "d620895895cd5546f819bc4bf759868dae6476ef105808a71535f8ec0869b82a",
+      "sha256_ogg": "304aca690f220938fdd4229972ba2c64d214dd03d72d2173ceb87902fbaee428"
+    },
+    {
+      "id": "voice_placeholder.victory",
+      "wav": "voice_placeholder/victory.wav",
+      "ogg": "voice_placeholder/victory.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 74857,
+      "duration_seconds": 1.559521,
+      "channels": 1,
+      "peak_dbfs": -6.003,
+      "rms_dbfs": -23.237,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "22538bd25ac25e1ee98e4b5435de5951a7c649216aa314a0f45a8aff1eed1e36",
+      "sha256_ogg": "8d25bc9d9a5ce62b522d7211ca2278912ff9699b7f247fc3379135edb03cb8af"
+    },
+    {
+      "id": "voice_placeholder.defeat",
+      "wav": "voice_placeholder/defeat.wav",
+      "ogg": "voice_placeholder/defeat.ogg",
+      "sample_rate_hz": 48000,
+      "frames": 77506,
+      "duration_seconds": 1.614708,
+      "channels": 1,
+      "peak_dbfs": -6.004,
+      "rms_dbfs": -24.412,
+      "loop": false,
+      "source": "espeak_en_gb_synthetic_placeholder",
+      "sha256_wav": "651fdf3858cdfd5ce2b2b5990bb1a247e17de7090f2cdabea5f1c9a233f71008",
+      "sha256_ogg": "d4ad746d0ec7522bc9aeb580f2a1ef9b31735d7c2aedcc34ebaa26d106e7fedc"
+    }
+  ]
+}

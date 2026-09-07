@@ -1,0 +1,17 @@
+# Local backup copies may contain private material; never export them.
+/backups/
+# Keep credentials and machine-local state out of the template.
+.env
+.env.*
+!.env.example
+!.env.sample
+
+node_modules/
+dist/
+server-dist/
+temp/
+.DS_Store
+playwright-report/
+test-results/
+coverage/
+.worktrees/

@@ -1,0 +1,2337 @@
+{
+  "status": "PASS",
+  "logical_clips": 139,
+  "decoded_files": 278,
+  "game_events": 79,
+  "sound_effects": 113,
+  "ambience_loops": 4,
+  "music_loops": 2,
+  "placeholder_voices": 20,
+  "duration_seconds": 236.296,
+  "unique_wav_hashes": 139,
+  "errors": [],
+  "loop_checks": [
+    {
+      "asset": "ambience.forest_loop",
+      "encoding": "wav",
+      "boundary_step": 0.0123291,
+      "within_sample_difference_envelope": true
+    },
+    {
+      "asset": "ambience.forest_loop",
+      "encoding": "ogg",
+      "boundary_step": 0.01352384,
+      "within_sample_difference_envelope": true
+    },
+    {
+      "asset": "ambience.river_loop",
+      "encoding": "wav",
+      "boundary_step": 0.01025391,
+      "within_sample_difference_envelope": true
+    },
+    {
+      "asset": "ambience.river_loop",
+      "encoding": "ogg",
+      "boundary_step": 0.01916673,
+      "within_sample_difference_envelope": true
+    },
+    {
+      "asset": "ambience.sea_loop",
+      "encoding": "wav",
+      "boundary_step": 0.00222778,
+      "within_sample_difference_envelope": true
+    },
+    {
+      "asset": "ambience.sea_loop",
+      "encoding": "ogg",
+      "boundary_step": 0.0015398,
+      "within_sample_difference_envelope": true
+    },
+    {
+      "asset": "ambience.fire_loop",
+      "encoding": "wav",
+      "boundary_step": 0.00299072,
+      "within_sample_difference_envelope": true
+    },
+    {
+      "asset": "ambience.fire_loop",
+      "encoding": "ogg",
+      "boundary_step": 0.00836937,
+      "within_sample_difference_envelope": true
+    },
+    {
+      "asset": "music.explore_loop",
+      "encoding": "wav",
+      "boundary_step": 0.00064087,
+      "within_sample_difference_envelope": true
+    },
+    {
+      "asset": "music.explore_loop",
+      "encoding": "ogg",
+      "boundary_step": 0.00196458,
+      "within_sample_difference_envelope": true
+    },
+    {
+      "asset": "music.battle_loop",
+      "encoding": "wav",
+      "boundary_step": 0.00024414,
+      "within_sample_difference_envelope": true
+    },
+    {
+      "asset": "music.battle_loop",
+      "encoding": "ogg",
+      "boundary_step": 0.00155371,
+      "within_sample_difference_envelope": true
+    }
+  ],
+  "checks": [
+    "file presence",
+    "WAV and Ogg decode",
+    "sample rate",
+    "duration/frame count",
+    "channel count",
+    "WAV PCM16 subtype",
+    "finite samples",
+    "non-silence",
+    "no clipped samples",
+    "SHA-256 hashes",
+    "unique WAV content",
+    "event ID referential integrity",
+    "loop boundary within expected sample differences"
+  ],
+  "not_tested": [
+    "perceptual listening quality",
+    "browser playback and autoplay behavior",
+    "game integration",
+    "3D rendering",
+    "multiplayer",
+    "gameplay balance and fun",
+    "exact AoE2 roster parity"
+  ],
+  "files": [
+    {
+      "asset": "ui.click_01",
+      "encoding": "wav",
+      "frames": 3840,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.1150958
+    },
+    {
+      "asset": "ui.click_01",
+      "encoding": "ogg",
+      "frames": 3840,
+      "channels": 1,
+      "peak": 0.4642388,
+      "rms": 0.1142862
+    },
+    {
+      "asset": "ui.click_02",
+      "encoding": "wav",
+      "frames": 3840,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1025908
+    },
+    {
+      "asset": "ui.click_02",
+      "encoding": "ogg",
+      "frames": 3840,
+      "channels": 1,
+      "peak": 0.4861836,
+      "rms": 0.1026416
+    },
+    {
+      "asset": "ui.confirm_01",
+      "encoding": "wav",
+      "frames": 17520,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1528932
+    },
+    {
+      "asset": "ui.confirm_01",
+      "encoding": "ogg",
+      "frames": 17520,
+      "channels": 1,
+      "peak": 0.5062301,
+      "rms": 0.1536911
+    },
+    {
+      "asset": "ui.cancel_01",
+      "encoding": "wav",
+      "frames": 14640,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1647825
+    },
+    {
+      "asset": "ui.cancel_01",
+      "encoding": "ogg",
+      "frames": 14640,
+      "channels": 1,
+      "peak": 0.5036289,
+      "rms": 0.1655598
+    },
+    {
+      "asset": "ui.error_01",
+      "encoding": "wav",
+      "frames": 14400,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.1410351
+    },
+    {
+      "asset": "ui.error_01",
+      "encoding": "ogg",
+      "frames": 14400,
+      "channels": 1,
+      "peak": 0.5062653,
+      "rms": 0.141891
+    },
+    {
+      "asset": "ui.error_02",
+      "encoding": "wav",
+      "frames": 14400,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.1412863
+    },
+    {
+      "asset": "ui.error_02",
+      "encoding": "ogg",
+      "frames": 14400,
+      "channels": 1,
+      "peak": 0.4961559,
+      "rms": 0.1421426
+    },
+    {
+      "asset": "ui.select_01",
+      "encoding": "wav",
+      "frames": 12000,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.211697
+    },
+    {
+      "asset": "ui.select_01",
+      "encoding": "ogg",
+      "frames": 12000,
+      "channels": 1,
+      "peak": 0.5165644,
+      "rms": 0.2136527
+    },
+    {
+      "asset": "ui.select_02",
+      "encoding": "wav",
+      "frames": 12000,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.2114601
+    },
+    {
+      "asset": "ui.select_02",
+      "encoding": "ogg",
+      "frames": 12000,
+      "channels": 1,
+      "peak": 0.5026714,
+      "rms": 0.2131309
+    },
+    {
+      "asset": "ui.queued_01",
+      "encoding": "wav",
+      "frames": 9120,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.2283432
+    },
+    {
+      "asset": "ui.queued_01",
+      "encoding": "ogg",
+      "frames": 9120,
+      "channels": 1,
+      "peak": 0.5188025,
+      "rms": 0.2303223
+    },
+    {
+      "asset": "ui.rally_01",
+      "encoding": "wav",
+      "frames": 16320,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1564285
+    },
+    {
+      "asset": "ui.rally_01",
+      "encoding": "ogg",
+      "frames": 16320,
+      "channels": 1,
+      "peak": 0.4896162,
+      "rms": 0.1572413
+    },
+    {
+      "asset": "ui.ping_01",
+      "encoding": "wav",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1346328
+    },
+    {
+      "asset": "ui.ping_01",
+      "encoding": "ogg",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.4873488,
+      "rms": 0.1353559
+    },
+    {
+      "asset": "alerts.under_attack_01",
+      "encoding": "wav",
+      "frames": 57600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0659737
+    },
+    {
+      "asset": "alerts.under_attack_01",
+      "encoding": "ogg",
+      "frames": 57600,
+      "channels": 1,
+      "peak": 0.4832027,
+      "rms": 0.0661656
+    },
+    {
+      "asset": "alerts.under_attack_02",
+      "encoding": "wav",
+      "frames": 57600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.062461
+    },
+    {
+      "asset": "alerts.under_attack_02",
+      "encoding": "ogg",
+      "frames": 57600,
+      "channels": 1,
+      "peak": 0.4834893,
+      "rms": 0.062724
+    },
+    {
+      "asset": "alerts.age_complete_01",
+      "encoding": "wav",
+      "frames": 93600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1108646
+    },
+    {
+      "asset": "alerts.age_complete_01",
+      "encoding": "ogg",
+      "frames": 93600,
+      "channels": 1,
+      "peak": 0.493118,
+      "rms": 0.1110291
+    },
+    {
+      "asset": "alerts.research_complete_01",
+      "encoding": "wav",
+      "frames": 41280,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.1031731
+    },
+    {
+      "asset": "alerts.research_complete_01",
+      "encoding": "ogg",
+      "frames": 41280,
+      "channels": 1,
+      "peak": 0.4911136,
+      "rms": 0.1037747
+    },
+    {
+      "asset": "alerts.building_complete_01",
+      "encoding": "wav",
+      "frames": 31680,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.1448876
+    },
+    {
+      "asset": "alerts.building_complete_01",
+      "encoding": "ogg",
+      "frames": 31680,
+      "channels": 1,
+      "peak": 0.4989084,
+      "rms": 0.1455105
+    },
+    {
+      "asset": "alerts.unit_complete_01",
+      "encoding": "wav",
+      "frames": 17280,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1497582
+    },
+    {
+      "asset": "alerts.unit_complete_01",
+      "encoding": "ogg",
+      "frames": 17280,
+      "channels": 1,
+      "peak": 0.5056294,
+      "rms": 0.150408
+    },
+    {
+      "asset": "alerts.population_full_01",
+      "encoding": "wav",
+      "frames": 25440,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1594391
+    },
+    {
+      "asset": "alerts.population_full_01",
+      "encoding": "ogg",
+      "frames": 25440,
+      "channels": 1,
+      "peak": 0.5037939,
+      "rms": 0.1603204
+    },
+    {
+      "asset": "alerts.resource_low_01",
+      "encoding": "wav",
+      "frames": 27360,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1428807
+    },
+    {
+      "asset": "alerts.resource_low_01",
+      "encoding": "ogg",
+      "frames": 27360,
+      "channels": 1,
+      "peak": 0.4961732,
+      "rms": 0.1433843
+    },
+    {
+      "asset": "economy.wood_chop_01",
+      "encoding": "wav",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.049011
+    },
+    {
+      "asset": "economy.wood_chop_01",
+      "encoding": "ogg",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.4704071,
+      "rms": 0.0488162
+    },
+    {
+      "asset": "economy.wood_chop_02",
+      "encoding": "wav",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0564618
+    },
+    {
+      "asset": "economy.wood_chop_02",
+      "encoding": "ogg",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.4983886,
+      "rms": 0.0561265
+    },
+    {
+      "asset": "economy.wood_chop_03",
+      "encoding": "wav",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0505186
+    },
+    {
+      "asset": "economy.wood_chop_03",
+      "encoding": "ogg",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5025232,
+      "rms": 0.0504076
+    },
+    {
+      "asset": "economy.mine_strike_01",
+      "encoding": "wav",
+      "frames": 26400,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0367882
+    },
+    {
+      "asset": "economy.mine_strike_01",
+      "encoding": "ogg",
+      "frames": 26400,
+      "channels": 1,
+      "peak": 0.4810281,
+      "rms": 0.0367025
+    },
+    {
+      "asset": "economy.mine_strike_02",
+      "encoding": "wav",
+      "frames": 26400,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0362698
+    },
+    {
+      "asset": "economy.mine_strike_02",
+      "encoding": "ogg",
+      "frames": 26400,
+      "channels": 1,
+      "peak": 0.4781371,
+      "rms": 0.0363419
+    },
+    {
+      "asset": "economy.mine_strike_03",
+      "encoding": "wav",
+      "frames": 26400,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.03492
+    },
+    {
+      "asset": "economy.mine_strike_03",
+      "encoding": "ogg",
+      "frames": 26400,
+      "channels": 1,
+      "peak": 0.4963416,
+      "rms": 0.0347344
+    },
+    {
+      "asset": "economy.harvest_01",
+      "encoding": "wav",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.089828
+    },
+    {
+      "asset": "economy.harvest_01",
+      "encoding": "ogg",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.4865978,
+      "rms": 0.0859936
+    },
+    {
+      "asset": "economy.harvest_02",
+      "encoding": "wav",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0930037
+    },
+    {
+      "asset": "economy.harvest_02",
+      "encoding": "ogg",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.4813831,
+      "rms": 0.0890321
+    },
+    {
+      "asset": "economy.harvest_03",
+      "encoding": "wav",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.082735
+    },
+    {
+      "asset": "economy.harvest_03",
+      "encoding": "ogg",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.4496492,
+      "rms": 0.0788235
+    },
+    {
+      "asset": "economy.gather_01",
+      "encoding": "wav",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0867148
+    },
+    {
+      "asset": "economy.gather_01",
+      "encoding": "ogg",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.4332096,
+      "rms": 0.0825635
+    },
+    {
+      "asset": "economy.gather_02",
+      "encoding": "wav",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0727817
+    },
+    {
+      "asset": "economy.gather_02",
+      "encoding": "ogg",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.4373604,
+      "rms": 0.069775
+    },
+    {
+      "asset": "economy.gather_03",
+      "encoding": "wav",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.091564
+    },
+    {
+      "asset": "economy.gather_03",
+      "encoding": "ogg",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.4699609,
+      "rms": 0.0877948
+    },
+    {
+      "asset": "economy.deposit_01",
+      "encoding": "wav",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.1078883
+    },
+    {
+      "asset": "economy.deposit_01",
+      "encoding": "ogg",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5152314,
+      "rms": 0.1078476
+    },
+    {
+      "asset": "economy.deposit_02",
+      "encoding": "wav",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0870058
+    },
+    {
+      "asset": "economy.deposit_02",
+      "encoding": "ogg",
+      "frames": 21600,
+      "channels": 1,
+      "peak": 0.5022708,
+      "rms": 0.0870466
+    },
+    {
+      "asset": "economy.build_hammer_01",
+      "encoding": "wav",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0504337
+    },
+    {
+      "asset": "economy.build_hammer_01",
+      "encoding": "ogg",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.4952141,
+      "rms": 0.0504213
+    },
+    {
+      "asset": "economy.build_hammer_02",
+      "encoding": "wav",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0441942
+    },
+    {
+      "asset": "economy.build_hammer_02",
+      "encoding": "ogg",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.4834148,
+      "rms": 0.0442584
+    },
+    {
+      "asset": "economy.build_hammer_03",
+      "encoding": "wav",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0433845
+    },
+    {
+      "asset": "economy.build_hammer_03",
+      "encoding": "ogg",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.4933833,
+      "rms": 0.0434086
+    },
+    {
+      "asset": "economy.repair_hammer_01",
+      "encoding": "wav",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0491767
+    },
+    {
+      "asset": "economy.repair_hammer_01",
+      "encoding": "ogg",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.4777379,
+      "rms": 0.0490904
+    },
+    {
+      "asset": "economy.repair_hammer_02",
+      "encoding": "wav",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0509962
+    },
+    {
+      "asset": "economy.repair_hammer_02",
+      "encoding": "ogg",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.4771836,
+      "rms": 0.0510398
+    },
+    {
+      "asset": "economy.repair_hammer_03",
+      "encoding": "wav",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0547427
+    },
+    {
+      "asset": "economy.repair_hammer_03",
+      "encoding": "ogg",
+      "frames": 33600,
+      "channels": 1,
+      "peak": 0.4736574,
+      "rms": 0.0546545
+    },
+    {
+      "asset": "movement.footstep_dirt_01",
+      "encoding": "wav",
+      "frames": 9120,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0637004
+    },
+    {
+      "asset": "movement.footstep_dirt_01",
+      "encoding": "ogg",
+      "frames": 9120,
+      "channels": 1,
+      "peak": 0.5024799,
+      "rms": 0.0635722
+    },
+    {
+      "asset": "movement.footstep_dirt_02",
+      "encoding": "wav",
+      "frames": 9120,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0685895
+    },
+    {
+      "asset": "movement.footstep_dirt_02",
+      "encoding": "ogg",
+      "frames": 9120,
+      "channels": 1,
+      "peak": 0.4985242,
+      "rms": 0.0680377
+    },
+    {
+      "asset": "movement.footstep_dirt_03",
+      "encoding": "wav",
+      "frames": 9120,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0751254
+    },
+    {
+      "asset": "movement.footstep_dirt_03",
+      "encoding": "ogg",
+      "frames": 9120,
+      "channels": 1,
+      "peak": 0.5054916,
+      "rms": 0.0746669
+    },
+    {
+      "asset": "movement.footstep_stone_01",
+      "encoding": "wav",
+      "frames": 8640,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0668791
+    },
+    {
+      "asset": "movement.footstep_stone_01",
+      "encoding": "ogg",
+      "frames": 8640,
+      "channels": 1,
+      "peak": 0.4688496,
+      "rms": 0.0669615
+    },
+    {
+      "asset": "movement.footstep_stone_02",
+      "encoding": "wav",
+      "frames": 8640,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0692093
+    },
+    {
+      "asset": "movement.footstep_stone_02",
+      "encoding": "ogg",
+      "frames": 8640,
+      "channels": 1,
+      "peak": 0.5053774,
+      "rms": 0.0689607
+    },
+    {
+      "asset": "movement.footstep_stone_03",
+      "encoding": "wav",
+      "frames": 8640,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0588915
+    },
+    {
+      "asset": "movement.footstep_stone_03",
+      "encoding": "ogg",
+      "frames": 8640,
+      "channels": 1,
+      "peak": 0.4773152,
+      "rms": 0.0585983
+    },
+    {
+      "asset": "movement.horse_hoof_01",
+      "encoding": "wav",
+      "frames": 16800,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0723935
+    },
+    {
+      "asset": "movement.horse_hoof_01",
+      "encoding": "ogg",
+      "frames": 16800,
+      "channels": 1,
+      "peak": 0.458802,
+      "rms": 0.0719711
+    },
+    {
+      "asset": "movement.horse_hoof_02",
+      "encoding": "wav",
+      "frames": 16800,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0677036
+    },
+    {
+      "asset": "movement.horse_hoof_02",
+      "encoding": "ogg",
+      "frames": 16800,
+      "channels": 1,
+      "peak": 0.4953232,
+      "rms": 0.0676343
+    },
+    {
+      "asset": "movement.horse_hoof_03",
+      "encoding": "wav",
+      "frames": 16800,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.072033
+    },
+    {
+      "asset": "movement.horse_hoof_03",
+      "encoding": "ogg",
+      "frames": 16800,
+      "channels": 1,
+      "peak": 0.5231043,
+      "rms": 0.0720604
+    },
+    {
+      "asset": "movement.wheel_01",
+      "encoding": "wav",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.099167
+    },
+    {
+      "asset": "movement.wheel_01",
+      "encoding": "ogg",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.4914559,
+      "rms": 0.0960433
+    },
+    {
+      "asset": "movement.wheel_02",
+      "encoding": "wav",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1010341
+    },
+    {
+      "asset": "movement.wheel_02",
+      "encoding": "ogg",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.4918344,
+      "rms": 0.097535
+    },
+    {
+      "asset": "movement.wheel_03",
+      "encoding": "wav",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0893862
+    },
+    {
+      "asset": "movement.wheel_03",
+      "encoding": "ogg",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.4642154,
+      "rms": 0.0858326
+    },
+    {
+      "asset": "combat.sword_swing_01",
+      "encoding": "wav",
+      "frames": 12480,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0867633
+    },
+    {
+      "asset": "combat.sword_swing_01",
+      "encoding": "ogg",
+      "frames": 12480,
+      "channels": 1,
+      "peak": 0.4629434,
+      "rms": 0.0830456
+    },
+    {
+      "asset": "combat.sword_swing_02",
+      "encoding": "wav",
+      "frames": 12480,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0939714
+    },
+    {
+      "asset": "combat.sword_swing_02",
+      "encoding": "ogg",
+      "frames": 12480,
+      "channels": 1,
+      "peak": 0.4499108,
+      "rms": 0.0901181
+    },
+    {
+      "asset": "combat.sword_swing_03",
+      "encoding": "wav",
+      "frames": 12480,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0963964
+    },
+    {
+      "asset": "combat.sword_swing_03",
+      "encoding": "ogg",
+      "frames": 12480,
+      "channels": 1,
+      "peak": 0.4791774,
+      "rms": 0.0921935
+    },
+    {
+      "asset": "combat.spear_thrust_01",
+      "encoding": "wav",
+      "frames": 12480,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0864164
+    },
+    {
+      "asset": "combat.spear_thrust_01",
+      "encoding": "ogg",
+      "frames": 12480,
+      "channels": 1,
+      "peak": 0.458801,
+      "rms": 0.0833896
+    },
+    {
+      "asset": "combat.spear_thrust_02",
+      "encoding": "wav",
+      "frames": 12480,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0875115
+    },
+    {
+      "asset": "combat.spear_thrust_02",
+      "encoding": "ogg",
+      "frames": 12480,
+      "channels": 1,
+      "peak": 0.4418569,
+      "rms": 0.0841103
+    },
+    {
+      "asset": "combat.spear_thrust_03",
+      "encoding": "wav",
+      "frames": 12480,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0820169
+    },
+    {
+      "asset": "combat.spear_thrust_03",
+      "encoding": "ogg",
+      "frames": 12480,
+      "channels": 1,
+      "peak": 0.4768158,
+      "rms": 0.0787491
+    },
+    {
+      "asset": "combat.impact_metal_01",
+      "encoding": "wav",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0546299
+    },
+    {
+      "asset": "combat.impact_metal_01",
+      "encoding": "ogg",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.4774585,
+      "rms": 0.0548321
+    },
+    {
+      "asset": "combat.impact_metal_02",
+      "encoding": "wav",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0537025
+    },
+    {
+      "asset": "combat.impact_metal_02",
+      "encoding": "ogg",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.4984322,
+      "rms": 0.0540073
+    },
+    {
+      "asset": "combat.impact_metal_03",
+      "encoding": "wav",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0592388
+    },
+    {
+      "asset": "combat.impact_metal_03",
+      "encoding": "ogg",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.496168,
+      "rms": 0.0593897
+    },
+    {
+      "asset": "combat.impact_soft_01",
+      "encoding": "wav",
+      "frames": 9600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0593664
+    },
+    {
+      "asset": "combat.impact_soft_01",
+      "encoding": "ogg",
+      "frames": 9600,
+      "channels": 1,
+      "peak": 0.4916804,
+      "rms": 0.0596823
+    },
+    {
+      "asset": "combat.impact_soft_02",
+      "encoding": "wav",
+      "frames": 9600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0690012
+    },
+    {
+      "asset": "combat.impact_soft_02",
+      "encoding": "ogg",
+      "frames": 9600,
+      "channels": 1,
+      "peak": 0.5154393,
+      "rms": 0.0691351
+    },
+    {
+      "asset": "combat.impact_soft_03",
+      "encoding": "wav",
+      "frames": 9600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0708144
+    },
+    {
+      "asset": "combat.impact_soft_03",
+      "encoding": "ogg",
+      "frames": 9600,
+      "channels": 1,
+      "peak": 0.4898094,
+      "rms": 0.0710058
+    },
+    {
+      "asset": "combat.bow_release_01",
+      "encoding": "wav",
+      "frames": 16800,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.136423
+    },
+    {
+      "asset": "combat.bow_release_01",
+      "encoding": "ogg",
+      "frames": 16800,
+      "channels": 1,
+      "peak": 0.4576523,
+      "rms": 0.1362682
+    },
+    {
+      "asset": "combat.bow_release_02",
+      "encoding": "wav",
+      "frames": 16800,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.1268058
+    },
+    {
+      "asset": "combat.bow_release_02",
+      "encoding": "ogg",
+      "frames": 16800,
+      "channels": 1,
+      "peak": 0.4491778,
+      "rms": 0.1266901
+    },
+    {
+      "asset": "combat.bow_release_03",
+      "encoding": "wav",
+      "frames": 16800,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.1388589
+    },
+    {
+      "asset": "combat.bow_release_03",
+      "encoding": "ogg",
+      "frames": 16800,
+      "channels": 1,
+      "peak": 0.4652247,
+      "rms": 0.1389081
+    },
+    {
+      "asset": "combat.arrow_wood_01",
+      "encoding": "wav",
+      "frames": 13440,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0594962
+    },
+    {
+      "asset": "combat.arrow_wood_01",
+      "encoding": "ogg",
+      "frames": 13440,
+      "channels": 1,
+      "peak": 0.4603708,
+      "rms": 0.0596712
+    },
+    {
+      "asset": "combat.arrow_wood_02",
+      "encoding": "wav",
+      "frames": 13440,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0600304
+    },
+    {
+      "asset": "combat.arrow_wood_02",
+      "encoding": "ogg",
+      "frames": 13440,
+      "channels": 1,
+      "peak": 0.4805237,
+      "rms": 0.0600597
+    },
+    {
+      "asset": "combat.arrow_wood_03",
+      "encoding": "wav",
+      "frames": 13440,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0536855
+    },
+    {
+      "asset": "combat.arrow_wood_03",
+      "encoding": "ogg",
+      "frames": 13440,
+      "channels": 1,
+      "peak": 0.4878669,
+      "rms": 0.053647
+    },
+    {
+      "asset": "combat.arrow_ground_01",
+      "encoding": "wav",
+      "frames": 10560,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0700724
+    },
+    {
+      "asset": "combat.arrow_ground_01",
+      "encoding": "ogg",
+      "frames": 10560,
+      "channels": 1,
+      "peak": 0.507222,
+      "rms": 0.0691203
+    },
+    {
+      "asset": "combat.arrow_ground_02",
+      "encoding": "wav",
+      "frames": 10560,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0628669
+    },
+    {
+      "asset": "combat.arrow_ground_02",
+      "encoding": "ogg",
+      "frames": 10560,
+      "channels": 1,
+      "peak": 0.5016229,
+      "rms": 0.0625869
+    },
+    {
+      "asset": "combat.arrow_ground_03",
+      "encoding": "wav",
+      "frames": 10560,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0770565
+    },
+    {
+      "asset": "combat.arrow_ground_03",
+      "encoding": "ogg",
+      "frames": 10560,
+      "channels": 1,
+      "peak": 0.4795838,
+      "rms": 0.0766631
+    },
+    {
+      "asset": "combat.crossbow_release_01",
+      "encoding": "wav",
+      "frames": 19200,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.1032299
+    },
+    {
+      "asset": "combat.crossbow_release_01",
+      "encoding": "ogg",
+      "frames": 19200,
+      "channels": 1,
+      "peak": 0.5094454,
+      "rms": 0.1032349
+    },
+    {
+      "asset": "combat.crossbow_release_02",
+      "encoding": "wav",
+      "frames": 19200,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0961254
+    },
+    {
+      "asset": "combat.crossbow_release_02",
+      "encoding": "ogg",
+      "frames": 19200,
+      "channels": 1,
+      "peak": 0.4734963,
+      "rms": 0.0956269
+    },
+    {
+      "asset": "combat.crossbow_release_03",
+      "encoding": "wav",
+      "frames": 19200,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0962161
+    },
+    {
+      "asset": "combat.crossbow_release_03",
+      "encoding": "ogg",
+      "frames": 19200,
+      "channels": 1,
+      "peak": 0.5088528,
+      "rms": 0.0960166
+    },
+    {
+      "asset": "combat.handgun_shot_01",
+      "encoding": "wav",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0608185
+    },
+    {
+      "asset": "combat.handgun_shot_01",
+      "encoding": "ogg",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.4990678,
+      "rms": 0.0601282
+    },
+    {
+      "asset": "combat.handgun_shot_02",
+      "encoding": "wav",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0518868
+    },
+    {
+      "asset": "combat.handgun_shot_02",
+      "encoding": "ogg",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5077773,
+      "rms": 0.0513368
+    },
+    {
+      "asset": "combat.handgun_shot_03",
+      "encoding": "wav",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0516254
+    },
+    {
+      "asset": "combat.handgun_shot_03",
+      "encoding": "ogg",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.4654389,
+      "rms": 0.0510992
+    },
+    {
+      "asset": "combat.unit_death_01",
+      "encoding": "wav",
+      "frames": 28800,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0567966
+    },
+    {
+      "asset": "combat.unit_death_01",
+      "encoding": "ogg",
+      "frames": 28800,
+      "channels": 1,
+      "peak": 0.4878077,
+      "rms": 0.0566079
+    },
+    {
+      "asset": "combat.unit_death_02",
+      "encoding": "wav",
+      "frames": 28800,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0617019
+    },
+    {
+      "asset": "combat.unit_death_02",
+      "encoding": "ogg",
+      "frames": 28800,
+      "channels": 1,
+      "peak": 0.4907375,
+      "rms": 0.0615555
+    },
+    {
+      "asset": "combat.unit_death_03",
+      "encoding": "wav",
+      "frames": 28800,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0612535
+    },
+    {
+      "asset": "combat.unit_death_03",
+      "encoding": "ogg",
+      "frames": 28800,
+      "channels": 1,
+      "peak": 0.4890968,
+      "rms": 0.061009
+    },
+    {
+      "asset": "siege.ram_hit_01",
+      "encoding": "wav",
+      "frames": 45600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0399678
+    },
+    {
+      "asset": "siege.ram_hit_01",
+      "encoding": "ogg",
+      "frames": 45600,
+      "channels": 1,
+      "peak": 0.4688867,
+      "rms": 0.0397854
+    },
+    {
+      "asset": "siege.ram_hit_02",
+      "encoding": "wav",
+      "frames": 45600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0419031
+    },
+    {
+      "asset": "siege.ram_hit_02",
+      "encoding": "ogg",
+      "frames": 45600,
+      "channels": 1,
+      "peak": 0.5233914,
+      "rms": 0.0417708
+    },
+    {
+      "asset": "siege.ram_hit_03",
+      "encoding": "wav",
+      "frames": 45600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.032095
+    },
+    {
+      "asset": "siege.ram_hit_03",
+      "encoding": "ogg",
+      "frames": 45600,
+      "channels": 1,
+      "peak": 0.4743256,
+      "rms": 0.0315847
+    },
+    {
+      "asset": "siege.catapult_launch_01",
+      "encoding": "wav",
+      "frames": 40800,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0461034
+    },
+    {
+      "asset": "siege.catapult_launch_01",
+      "encoding": "ogg",
+      "frames": 40800,
+      "channels": 1,
+      "peak": 0.4947088,
+      "rms": 0.045309
+    },
+    {
+      "asset": "siege.catapult_launch_02",
+      "encoding": "wav",
+      "frames": 40800,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0457749
+    },
+    {
+      "asset": "siege.catapult_launch_02",
+      "encoding": "ogg",
+      "frames": 40800,
+      "channels": 1,
+      "peak": 0.4748297,
+      "rms": 0.0448666
+    },
+    {
+      "asset": "siege.rock_impact_01",
+      "encoding": "wav",
+      "frames": 52800,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0494876
+    },
+    {
+      "asset": "siege.rock_impact_01",
+      "encoding": "ogg",
+      "frames": 52800,
+      "channels": 1,
+      "peak": 0.5232787,
+      "rms": 0.0491996
+    },
+    {
+      "asset": "siege.rock_impact_02",
+      "encoding": "wav",
+      "frames": 52800,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0486338
+    },
+    {
+      "asset": "siege.rock_impact_02",
+      "encoding": "ogg",
+      "frames": 52800,
+      "channels": 1,
+      "peak": 0.4717185,
+      "rms": 0.0484999
+    },
+    {
+      "asset": "siege.rock_impact_03",
+      "encoding": "wav",
+      "frames": 52800,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0525205
+    },
+    {
+      "asset": "siege.rock_impact_03",
+      "encoding": "ogg",
+      "frames": 52800,
+      "channels": 1,
+      "peak": 0.5007372,
+      "rms": 0.052288
+    },
+    {
+      "asset": "siege.trebuchet_launch_01",
+      "encoding": "wav",
+      "frames": 55200,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.041306
+    },
+    {
+      "asset": "siege.trebuchet_launch_01",
+      "encoding": "ogg",
+      "frames": 55200,
+      "channels": 1,
+      "peak": 0.4853613,
+      "rms": 0.0404009
+    },
+    {
+      "asset": "siege.trebuchet_launch_02",
+      "encoding": "wav",
+      "frames": 55200,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0442269
+    },
+    {
+      "asset": "siege.trebuchet_launch_02",
+      "encoding": "ogg",
+      "frames": 55200,
+      "channels": 1,
+      "peak": 0.50392,
+      "rms": 0.0433007
+    },
+    {
+      "asset": "siege.cannon_shot_01",
+      "encoding": "wav",
+      "frames": 86400,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0504728
+    },
+    {
+      "asset": "siege.cannon_shot_01",
+      "encoding": "ogg",
+      "frames": 86400,
+      "channels": 1,
+      "peak": 0.4656096,
+      "rms": 0.0500427
+    },
+    {
+      "asset": "siege.cannon_shot_02",
+      "encoding": "wav",
+      "frames": 86400,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0564365
+    },
+    {
+      "asset": "siege.cannon_shot_02",
+      "encoding": "ogg",
+      "frames": 86400,
+      "channels": 1,
+      "peak": 0.4921703,
+      "rms": 0.0560662
+    },
+    {
+      "asset": "siege.explosion_01",
+      "encoding": "wav",
+      "frames": 69600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0476397
+    },
+    {
+      "asset": "siege.explosion_01",
+      "encoding": "ogg",
+      "frames": 69600,
+      "channels": 1,
+      "peak": 0.4919504,
+      "rms": 0.0470617
+    },
+    {
+      "asset": "siege.explosion_02",
+      "encoding": "wav",
+      "frames": 69600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0495416
+    },
+    {
+      "asset": "siege.explosion_02",
+      "encoding": "ogg",
+      "frames": 69600,
+      "channels": 1,
+      "peak": 0.4944831,
+      "rms": 0.0492525
+    },
+    {
+      "asset": "siege.building_collapse_01",
+      "encoding": "wav",
+      "frames": 105600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.051915
+    },
+    {
+      "asset": "siege.building_collapse_01",
+      "encoding": "ogg",
+      "frames": 105600,
+      "channels": 1,
+      "peak": 0.4799923,
+      "rms": 0.0517349
+    },
+    {
+      "asset": "siege.building_collapse_02",
+      "encoding": "wav",
+      "frames": 105600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.052979
+    },
+    {
+      "asset": "siege.building_collapse_02",
+      "encoding": "ogg",
+      "frames": 105600,
+      "channels": 1,
+      "peak": 0.5072367,
+      "rms": 0.052737
+    },
+    {
+      "asset": "monastery.heal_01",
+      "encoding": "wav",
+      "frames": 45120,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1165401
+    },
+    {
+      "asset": "monastery.heal_01",
+      "encoding": "ogg",
+      "frames": 45120,
+      "channels": 1,
+      "peak": 0.5000421,
+      "rms": 0.1169702
+    },
+    {
+      "asset": "monastery.heal_02",
+      "encoding": "wav",
+      "frames": 47616,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.1188637
+    },
+    {
+      "asset": "monastery.heal_02",
+      "encoding": "ogg",
+      "frames": 47616,
+      "channels": 1,
+      "peak": 0.4992412,
+      "rms": 0.1193741
+    },
+    {
+      "asset": "monastery.conversion_start_01",
+      "encoding": "wav",
+      "frames": 86400,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1839705
+    },
+    {
+      "asset": "monastery.conversion_start_01",
+      "encoding": "ogg",
+      "frames": 86400,
+      "channels": 1,
+      "peak": 0.5106359,
+      "rms": 0.1852925
+    },
+    {
+      "asset": "monastery.conversion_complete_01",
+      "encoding": "wav",
+      "frames": 56160,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0958893
+    },
+    {
+      "asset": "monastery.conversion_complete_01",
+      "encoding": "ogg",
+      "frames": 56160,
+      "channels": 1,
+      "peak": 0.478283,
+      "rms": 0.0962849
+    },
+    {
+      "asset": "monastery.relic_pickup_01",
+      "encoding": "wav",
+      "frames": 62400,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0891282
+    },
+    {
+      "asset": "monastery.relic_pickup_01",
+      "encoding": "ogg",
+      "frames": 62400,
+      "channels": 1,
+      "peak": 0.4881547,
+      "rms": 0.0893334
+    },
+    {
+      "asset": "naval.oar_splash_01",
+      "encoding": "wav",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0934357
+    },
+    {
+      "asset": "naval.oar_splash_01",
+      "encoding": "ogg",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5689973,
+      "rms": 0.0898048
+    },
+    {
+      "asset": "naval.oar_splash_02",
+      "encoding": "wav",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0830769
+    },
+    {
+      "asset": "naval.oar_splash_02",
+      "encoding": "ogg",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5052045,
+      "rms": 0.0799666
+    },
+    {
+      "asset": "naval.oar_splash_03",
+      "encoding": "wav",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0878888
+    },
+    {
+      "asset": "naval.oar_splash_03",
+      "encoding": "ogg",
+      "frames": 31200,
+      "channels": 1,
+      "peak": 0.4766702,
+      "rms": 0.0839513
+    },
+    {
+      "asset": "naval.cannon_shot_01",
+      "encoding": "wav",
+      "frames": 86400,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0445008
+    },
+    {
+      "asset": "naval.cannon_shot_01",
+      "encoding": "ogg",
+      "frames": 86400,
+      "channels": 1,
+      "peak": 0.4882454,
+      "rms": 0.0442248
+    },
+    {
+      "asset": "naval.cannon_shot_02",
+      "encoding": "wav",
+      "frames": 86400,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0495108
+    },
+    {
+      "asset": "naval.cannon_shot_02",
+      "encoding": "ogg",
+      "frames": 86400,
+      "channels": 1,
+      "peak": 0.5047871,
+      "rms": 0.0491472
+    },
+    {
+      "asset": "naval.fire_attack_01",
+      "encoding": "wav",
+      "frames": 43200,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0890907
+    },
+    {
+      "asset": "naval.fire_attack_01",
+      "encoding": "ogg",
+      "frames": 43200,
+      "channels": 1,
+      "peak": 0.4755024,
+      "rms": 0.0853408
+    },
+    {
+      "asset": "naval.fire_attack_02",
+      "encoding": "wav",
+      "frames": 43200,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0839418
+    },
+    {
+      "asset": "naval.fire_attack_02",
+      "encoding": "ogg",
+      "frames": 43200,
+      "channels": 1,
+      "peak": 0.4764,
+      "rms": 0.0803481
+    },
+    {
+      "asset": "naval.ship_sink_01",
+      "encoding": "wav",
+      "frames": 105600,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.034783
+    },
+    {
+      "asset": "naval.ship_sink_01",
+      "encoding": "ogg",
+      "frames": 105600,
+      "channels": 1,
+      "peak": 0.4820924,
+      "rms": 0.033919
+    },
+    {
+      "asset": "naval.ship_sink_02",
+      "encoding": "wav",
+      "frames": 105600,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0314918
+    },
+    {
+      "asset": "naval.ship_sink_02",
+      "encoding": "ogg",
+      "frames": 105600,
+      "channels": 1,
+      "peak": 0.5284504,
+      "rms": 0.0308067
+    },
+    {
+      "asset": "results.victory_01",
+      "encoding": "wav",
+      "frames": 144000,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.1262743
+    },
+    {
+      "asset": "results.victory_01",
+      "encoding": "ogg",
+      "frames": 144000,
+      "channels": 1,
+      "peak": 0.4999563,
+      "rms": 0.1268856
+    },
+    {
+      "asset": "results.defeat_01",
+      "encoding": "wav",
+      "frames": 142080,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.1159305
+    },
+    {
+      "asset": "results.defeat_01",
+      "encoding": "ogg",
+      "frames": 142080,
+      "channels": 1,
+      "peak": 0.4888125,
+      "rms": 0.1166928
+    },
+    {
+      "asset": "ambience.forest_loop",
+      "encoding": "wav",
+      "frames": 768000,
+      "channels": 2,
+      "peak": 0.2509766,
+      "rms": 0.0482476
+    },
+    {
+      "asset": "ambience.forest_loop",
+      "encoding": "ogg",
+      "frames": 768000,
+      "channels": 2,
+      "peak": 0.2590794,
+      "rms": 0.0466387
+    },
+    {
+      "asset": "ambience.river_loop",
+      "encoding": "wav",
+      "frames": 768000,
+      "channels": 2,
+      "peak": 0.2509766,
+      "rms": 0.0383951
+    },
+    {
+      "asset": "ambience.river_loop",
+      "encoding": "ogg",
+      "frames": 768000,
+      "channels": 2,
+      "peak": 0.2606129,
+      "rms": 0.036889
+    },
+    {
+      "asset": "ambience.sea_loop",
+      "encoding": "wav",
+      "frames": 768000,
+      "channels": 2,
+      "peak": 0.2509766,
+      "rms": 0.038129
+    },
+    {
+      "asset": "ambience.sea_loop",
+      "encoding": "ogg",
+      "frames": 768000,
+      "channels": 2,
+      "peak": 0.2577188,
+      "rms": 0.0370659
+    },
+    {
+      "asset": "ambience.fire_loop",
+      "encoding": "wav",
+      "frames": 768000,
+      "channels": 2,
+      "peak": 0.2510071,
+      "rms": 0.0353728
+    },
+    {
+      "asset": "ambience.fire_loop",
+      "encoding": "ogg",
+      "frames": 768000,
+      "channels": 2,
+      "peak": 0.2401123,
+      "rms": 0.034199
+    },
+    {
+      "asset": "music.explore_loop",
+      "encoding": "wav",
+      "frames": 1536000,
+      "channels": 2,
+      "peak": 0.2509766,
+      "rms": 0.0454472
+    },
+    {
+      "asset": "music.explore_loop",
+      "encoding": "ogg",
+      "frames": 1536000,
+      "channels": 2,
+      "peak": 0.2498655,
+      "rms": 0.0456254
+    },
+    {
+      "asset": "music.battle_loop",
+      "encoding": "wav",
+      "frames": 1536000,
+      "channels": 2,
+      "peak": 0.2509766,
+      "rms": 0.0247389
+    },
+    {
+      "asset": "music.battle_loop",
+      "encoding": "ogg",
+      "frames": 1536000,
+      "channels": 2,
+      "peak": 0.2440533,
+      "rms": 0.0247674
+    },
+    {
+      "asset": "voice_placeholder.villager_select",
+      "encoding": "wav",
+      "frames": 38627,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0534554
+    },
+    {
+      "asset": "voice_placeholder.villager_select",
+      "encoding": "ogg",
+      "frames": 38627,
+      "channels": 1,
+      "peak": 0.4900036,
+      "rms": 0.0529406
+    },
+    {
+      "asset": "voice_placeholder.villager_move",
+      "encoding": "wav",
+      "frames": 55439,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0676726
+    },
+    {
+      "asset": "voice_placeholder.villager_move",
+      "encoding": "ogg",
+      "frames": 55439,
+      "channels": 1,
+      "peak": 0.5191093,
+      "rms": 0.0665762
+    },
+    {
+      "asset": "voice_placeholder.villager_build",
+      "encoding": "wav",
+      "frames": 46392,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0621097
+    },
+    {
+      "asset": "voice_placeholder.villager_build",
+      "encoding": "ogg",
+      "frames": 46392,
+      "channels": 1,
+      "peak": 0.4999515,
+      "rms": 0.0616846
+    },
+    {
+      "asset": "voice_placeholder.villager_gather",
+      "encoding": "wav",
+      "frames": 49498,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0523039
+    },
+    {
+      "asset": "voice_placeholder.villager_gather",
+      "encoding": "ogg",
+      "frames": 49498,
+      "channels": 1,
+      "peak": 0.4910589,
+      "rms": 0.0515088
+    },
+    {
+      "asset": "voice_placeholder.villager_repair",
+      "encoding": "wav",
+      "frames": 68065,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0595923
+    },
+    {
+      "asset": "voice_placeholder.villager_repair",
+      "encoding": "ogg",
+      "frames": 68065,
+      "channels": 1,
+      "peak": 0.4661082,
+      "rms": 0.0588848
+    },
+    {
+      "asset": "voice_placeholder.soldier_select",
+      "encoding": "wav",
+      "frames": 53954,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0504613
+    },
+    {
+      "asset": "voice_placeholder.soldier_select",
+      "encoding": "ogg",
+      "frames": 53954,
+      "channels": 1,
+      "peak": 0.5007416,
+      "rms": 0.0499759
+    },
+    {
+      "asset": "voice_placeholder.soldier_move",
+      "encoding": "wav",
+      "frames": 56464,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0691761
+    },
+    {
+      "asset": "voice_placeholder.soldier_move",
+      "encoding": "ogg",
+      "frames": 56464,
+      "channels": 1,
+      "peak": 0.4791124,
+      "rms": 0.0679973
+    },
+    {
+      "asset": "voice_placeholder.soldier_attack",
+      "encoding": "wav",
+      "frames": 52391,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0531942
+    },
+    {
+      "asset": "voice_placeholder.soldier_attack",
+      "encoding": "ogg",
+      "frames": 52391,
+      "channels": 1,
+      "peak": 0.4648386,
+      "rms": 0.051986
+    },
+    {
+      "asset": "voice_placeholder.cavalry_select",
+      "encoding": "wav",
+      "frames": 68282,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0577049
+    },
+    {
+      "asset": "voice_placeholder.cavalry_select",
+      "encoding": "ogg",
+      "frames": 68282,
+      "channels": 1,
+      "peak": 0.4948208,
+      "rms": 0.0568167
+    },
+    {
+      "asset": "voice_placeholder.cavalry_move",
+      "encoding": "wav",
+      "frames": 50426,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0632318
+    },
+    {
+      "asset": "voice_placeholder.cavalry_move",
+      "encoding": "ogg",
+      "frames": 50426,
+      "channels": 1,
+      "peak": 0.4977046,
+      "rms": 0.0616401
+    },
+    {
+      "asset": "voice_placeholder.siege_select",
+      "encoding": "wav",
+      "frames": 54575,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0558795
+    },
+    {
+      "asset": "voice_placeholder.siege_select",
+      "encoding": "ogg",
+      "frames": 54575,
+      "channels": 1,
+      "peak": 0.5045026,
+      "rms": 0.0552947
+    },
+    {
+      "asset": "voice_placeholder.siege_attack",
+      "encoding": "wav",
+      "frames": 56388,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0414143
+    },
+    {
+      "asset": "voice_placeholder.siege_attack",
+      "encoding": "ogg",
+      "frames": 56388,
+      "channels": 1,
+      "peak": 0.4694963,
+      "rms": 0.0407206
+    },
+    {
+      "asset": "voice_placeholder.monk_select",
+      "encoding": "wav",
+      "frames": 66045,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0514887
+    },
+    {
+      "asset": "voice_placeholder.monk_select",
+      "encoding": "ogg",
+      "frames": 66045,
+      "channels": 1,
+      "peak": 0.4873131,
+      "rms": 0.0506164
+    },
+    {
+      "asset": "voice_placeholder.monk_heal",
+      "encoding": "wav",
+      "frames": 56401,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0557845
+    },
+    {
+      "asset": "voice_placeholder.monk_heal",
+      "encoding": "ogg",
+      "frames": 56401,
+      "channels": 1,
+      "peak": 0.483431,
+      "rms": 0.0552008
+    },
+    {
+      "asset": "voice_placeholder.under_attack",
+      "encoding": "wav",
+      "frames": 100644,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0562852
+    },
+    {
+      "asset": "voice_placeholder.under_attack",
+      "encoding": "ogg",
+      "frames": 100644,
+      "channels": 1,
+      "peak": 0.5081174,
+      "rms": 0.0554505
+    },
+    {
+      "asset": "voice_placeholder.population_full",
+      "encoding": "wav",
+      "frames": 75558,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.065047
+    },
+    {
+      "asset": "voice_placeholder.population_full",
+      "encoding": "ogg",
+      "frames": 75558,
+      "channels": 1,
+      "peak": 0.4882759,
+      "rms": 0.0640699
+    },
+    {
+      "asset": "voice_placeholder.not_enough_resources",
+      "encoding": "wav",
+      "frames": 80103,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0597519
+    },
+    {
+      "asset": "voice_placeholder.not_enough_resources",
+      "encoding": "ogg",
+      "frames": 80103,
+      "channels": 1,
+      "peak": 0.4913623,
+      "rms": 0.0590923
+    },
+    {
+      "asset": "voice_placeholder.age_complete",
+      "encoding": "wav",
+      "frames": 81942,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0559095
+    },
+    {
+      "asset": "voice_placeholder.age_complete",
+      "encoding": "ogg",
+      "frames": 81942,
+      "channels": 1,
+      "peak": 0.4681573,
+      "rms": 0.0554991
+    },
+    {
+      "asset": "voice_placeholder.victory",
+      "encoding": "wav",
+      "frames": 74857,
+      "channels": 1,
+      "peak": 0.5010071,
+      "rms": 0.0688892
+    },
+    {
+      "asset": "voice_placeholder.victory",
+      "encoding": "ogg",
+      "frames": 74857,
+      "channels": 1,
+      "peak": 0.515231,
+      "rms": 0.06825
+    },
+    {
+      "asset": "voice_placeholder.defeat",
+      "encoding": "wav",
+      "frames": 77506,
+      "channels": 1,
+      "peak": 0.5009766,
+      "rms": 0.0601729
+    },
+    {
+      "asset": "voice_placeholder.defeat",
+      "encoding": "ogg",
+      "frames": 77506,
+      "channels": 1,
+      "peak": 0.4982953,
+      "rms": 0.0597027
+    }
+  ]
+}
