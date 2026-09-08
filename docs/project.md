@@ -1,25 +1,17 @@
 # Project facts
 
-| Field | Value |
-|---|---|
-| Product and user outcome | Ironvale: playable desktop-first 3D browser RTS, approved online human duel and same-rules bot practice |
-| Stack and pinned versions | Approved strict TypeScript + Three.js; proposed Vite, Node/WebSocket, Vitest, Playwright; version selection pending |
-| Entry points and composition roots | None; no application source or package manifest exists |
-| Canonical requirements / accepted design | User product contract and recorded approvals; `docs/ironvale-spec.md` is the consolidated draft awaiting approval; original proposal preserved |
-| Key invariants | Authoritative renderer-free rules; fog filters network state; deterministic same-build replay; no runtime LLM; full individually audited approved content |
-| Test command and working directory | UNKNOWN; game tests not created |
-| Lint / typecheck / build commands | UNKNOWN; no application configuration |
-| Dev startup and readiness probe | UNKNOWN; no runnable game |
-| Disposable test environment identity | None yet |
-| Runtime revision / image check | No Git repository; local Node v25.6.1, npm 11.9.0 |
-| Required CI gates | User requires simulation, adversarial networking, browser, production, performance and human playtest evidence |
-| Non-obvious conventions | Preserve supplied audio/provenance; preserve unrelated template/backups; record proposals separately |
-| Protected external systems / release policy | No paid services or destructive/material architecture changes without approval; no external release configured |
+Ironvale is an approved desktop-first Three.js/TypeScript RTS. The complete contract lives in [the approved specification](ironvale-spec.md), with decisions in `docs/decisions/`. The current implementation is a **development slice**, not the full approved game.
 
-Reference selection: latest released DE as of 2026-09-07; see [reference decision](decisions/003-reference-version.md), including unresolved ancient-era DLC coverage.
+- Branch: `ironvale/foundation`; original inputs and approval preserved in baseline commit `35f201f`.
+- Runtime: npm scripts use the pinned local Node 24.13.0. Strict TypeScript 5.9.3, Three.js 0.185.1, Vite 8.2.2, ws 8.21.3; all versions and lockfile in package files.
+- Entry points: `src/server/index.ts` starts HTTP/WebSocket rooms; `src/server/match-worker.ts` owns each match; `src/client/main.ts` composes renderer, HUD, input and Web Audio.
+- Rules: `src/sim` is renderer-free; `src/content` typed development catalog; `src/protocol` intention validation and permitted views; `src/bot` consumes only those views.
+- Start: `npm ci`, `npm run dev`, open `http://127.0.0.1:5173`. Health: `http://127.0.0.1:3001/health`.
+- Verification: `npm run typecheck`, `npm run lint`, `npm test`, `npm run validate:assets`, `npm run headless`, `npm run test:browser`, `npm run build`. Chromium install: `npm exec -- playwright install chromium`.
+- Production: `npm run build`, then `npm start`, open `http://127.0.0.1:3001`. Build verifies/copies original audio before bundling.
+- Test environments: in-memory matches, ephemeral loopback server tests, disposable Chromium contexts. No accounts, cloud credentials, databases, paid services or LLM runtime.
+- Inputs: original pack in `plan/ironvale_design_pack`; ZIP inspection/hashes and missing inputs in [intake](ironvale-intake.md). Served audio is an ignored, reproducible verified copy in `public/audio`; predev/prebuild synchronizes it from the canonical pack.
+- Coverage: `docs/content/coverage.json` contains 1,466 separate reference records; records are not proof of implementation. Full roster, naval/ancient rulesets and other A–F acceptance remain open.
+- Evidence: `docs/evidence`; next task and actual check status in [handover](../HANDOVER.md). Preserve unrelated guidance/backups.
 
-Input locations, hashes, inspection evidence and unresolved decisions: [Ironvale intake](ironvale-intake.md).
-Current next action: [handover](../HANDOVER.md).
-
-Template-only check: `powershell -NoProfile -File tools/check-template.ps1` from root.
-PowerShell is unavailable on PATH; this command has not been verified here and does not test gameplay.
+Human playtests, real two-device networking and the reference-machine performance targets remain unverified. No A–F completion is claimed.

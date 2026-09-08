@@ -1,0 +1,38 @@
+{
+  "recordedAt": "2026-09-07T23:49:31.721Z",
+  "fixture": "400-unit converging armies; original map; 50% swordsmen, 25% archers, 25% spearmen; 600 ticks including permitted observations every two ticks",
+  "seed": 42,
+  "content": "ironvale-development-0.1",
+  "initialPopulation": [
+    200,
+    200
+  ],
+  "activeUnits": {
+    "initial": 400,
+    "minimum": 326,
+    "final": 326
+  },
+  "machine": {
+    "cpu": "Apple M1 Pro",
+    "logicalCores": 10,
+    "ramGiB": 16,
+    "platform": "darwin",
+    "release": "25.5.0",
+    "arch": "arm64",
+    "node": "v24.13.0"
+  },
+  "tickMs": {
+    "p50": 62.28912499999933,
+    "p95": 70.2651249999999,
+    "p99": 77.88175000000047,
+    "max": 122.05112499999814,
+    "samples": 600,
+    "over50ms": 490
+  },
+  "limitations": [
+    "Headless local fixture, not a frame-rate benchmark or long-session proof.",
+    "Units seeded for load, not produced through economy.",
+    "No renderer, browser, audio or network latency in this run.",
+    "M1 Pro 16GB differs from proposed M1 Air 8GB target."
+  ]
+}

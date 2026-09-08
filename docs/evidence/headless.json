@@ -1,0 +1,53 @@
+{
+  "seed": 42,
+  "ticks": 17695,
+  "result": {
+    "winner": 1,
+    "reason": "conquest"
+  },
+  "commands": 523,
+  "rejected": {
+    "resources": 7,
+    "blocked": 1
+  },
+  "hash": "7c96d63ed931d3c0868aa45daf070a0f4c1091fddefbb93bad1272e04aa26d28",
+  "replayMatches": true,
+  "tickMs": {
+    "p50": 0.4446669999997539,
+    "p95": 0.9355419999997139,
+    "p99": 1.7229580000002898,
+    "max": 13.721042000000004
+  },
+  "players": [
+    {
+      "resources": {
+        "food": 22,
+        "wood": 20,
+        "gold": 375,
+        "stone": 100
+      },
+      "units": 0,
+      "buildings": []
+    },
+    {
+      "resources": {
+        "food": 20,
+        "wood": 10,
+        "gold": 925,
+        "stone": 100
+      },
+      "units": 30,
+      "buildings": [
+        "townCenter",
+        "barracks",
+        "house",
+        "archeryRange",
+        "house",
+        "house",
+        "house",
+        "house"
+      ]
+    }
+  ],
+  "conditions": "Node24.13.0 on M1 Pro16GB, same-machine headless bot duel, no browser suite running; normal economy commands only. Not human enjoyment evidence."
+}

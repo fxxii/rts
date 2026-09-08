@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "noEmit": false, "outDir": "server-dist", "module": "NodeNext", "moduleResolution": "NodeNext", "sourceMap": true },
+  "include": ["src/server", "src/sim", "src/content", "src/protocol", "src/bot"]
+}

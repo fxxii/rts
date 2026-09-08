@@ -1,0 +1,24 @@
+{
+  "recordedAt": "2026-09-08T00:00:02.964Z",
+  "browser": "153.0.8010.12",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "backend": "Playwright headless Chromium, ANGLE SwiftShader; software rendering",
+  "fixture": "Unmodified starting practice view with live bot/server; 200 simulation ticks; normal audio active; no orders",
+  "frameMs": {
+    "p50": 66.60000000000036,
+    "p95": 100,
+    "p99": 200,
+    "max": 850,
+    "samples": 159
+  },
+  "drawCalls": 50,
+  "visibleEntities": 9,
+  "limitations": [
+    "Not a 400-visible-unit renderer benchmark.",
+    "Software GPU does not measure physical M1 Pro/M1 Air GPU performance.",
+    "Short automated sample does not establish long-session or human experience."
+  ]
+}

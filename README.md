@@ -1,3 +1,16 @@
+# Ironvale
+
+Playable 3D browser RTS **development slice**. Start practice against an observation-only bot or create/join a two-player room. The full approved roster and advanced systems remain in development.
+
+```sh
+npm ci
+npm run dev
+```
+
+Open **http://127.0.0.1:5173**. See [play, controls and two-player setup](docs/play.md), [verification evidence](docs/evidence/checkpoint.md), [approved specification](docs/ironvale-spec.md) and [current handover](HANDOVER.md).
+
+---
+
 # Codex + Astra project starter
 
 ## Start a project

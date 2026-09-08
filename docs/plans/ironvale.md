@@ -41,10 +41,10 @@
 
 Files: create package/lockfile, strict tsconfigs, Vitest/ESLint configs, content/protocol files above, `tests/content.test.ts`, `tests/protocol.test.ts`, `tools/validate-assets.ts`.
 
-- [ ] Pin/install compatible dependencies after official docs checks; ignore generated/private outputs.
+- [x] Pin/install compatible dependencies after official docs checks; ignore generated/private outputs.
 - [ ] Write tests: `expect(decodeCommand({type:'move',ids:[1],x:NaN,z:2})).toBeUndefined()`; reject duplicate/missing content IDs, cyclic prerequisites, impossible availability and negative costs; verify all supplied audio hashes and event references.
 - [ ] Run `npm test -- tests/content.test.ts tests/protocol.test.ts`; observe missing behavior fail.
-- [ ] Implement typed records and runtime decoder with finite/bounded coordinates and at most 200 IDs; assets validator resolves real pack paths without mutation.
+- [x] Implement typed records and runtime decoder with finite/bounded coordinates and at most 200 IDs; assets validator resolves real pack paths without mutation.
 - [ ] Run `npm run typecheck`, `npm run lint`, `npm test -- tests/content.test.ts tests/protocol.test.ts`, `npm run validate:assets`; record results and commit intended files.
 
 ## Task A2 — Physical economy and orders
@@ -52,19 +52,19 @@ Files: create package/lockfile, strict tsconfigs, Vitest/ESLint configs, content
 Dependencies: A1. Files: sim types/world/commands/economy/navigation, `tests/economy.test.ts`, `tests/navigation.test.ts`.
 
 - [ ] Write real-world command tests: treasury unchanged during gathering; deposit increases exactly carried amount; retask preserves cargo; depletion/destroyed drop-off recovers without hidden scouting; illegal construction cannot charge.
-- [ ] Run focused tests and observe failure, then implement integer-tick move/gather/deposit/build/repair and bounded deterministic path search/obstacle updates.
+- [x] Run focused tests and observe failure, then implement integer-tick move/gather/deposit/build/repair and bounded deterministic path search/obstacle updates.
 - [ ] Queue tests enqueue twice with insufficient remaining funds, cancel once, destroy producer, fill population/block spawn, and assert no duplicate/refund/negative-resource behavior.
-- [ ] Implement paid queues, construction fractions, spawn retention, age prerequisites and research using the approved refund policy.
+- [x] Implement paid queues, construction fractions, spawn retention, age prerequisites and research using the approved refund policy.
 - [ ] Run `npm test -- tests/economy.test.ts tests/navigation.test.ts`, `npm run typecheck`; inspect canonical state and commit.
 
 ## Task A3 — Combat, observation, outcome and replay
 
 Dependencies: A2. Files: combat/visibility/replay/index, `tests/combat.test.ts`, `tests/visibility.test.ts`, `tests/replay.test.ts`, `tools/headless.ts`.
 
-- [ ] Write combat tests at attack wind-up/interval boundaries; spear/cavalry category bonus differs from ordinary infantry damage; stop/retask cannot reset cooldown.
-- [ ] Write fog test: observe enemy building, leave sight, destroy it, assert old building memory remains until rescanned; never expose unseen resources or enemy units.
-- [ ] Write elimination tests preserving garrison/transport identities and simultaneous draw; replay two same-seed command logs and compare checkpoints, then change a command and require divergence.
-- [ ] Run failing tests, implement deterministic scheduled combat, filtered view IDs/events, outcomes and canonical checkpoints; no renderer imports.
+- [x] Write combat tests at attack wind-up/interval boundaries; spear/cavalry category bonus differs from ordinary infantry damage; stop/retask cannot reset cooldown.
+- [x] Write fog test: observe enemy building, leave sight, destroy it, assert old building memory remains until rescanned; never expose unseen resources or enemy units.
+- [x] Write elimination tests preserving garrison/transport identities and simultaneous draw; replay two same-seed command logs and compare checkpoints, then change a command and require divergence.
+- [x] Run failing tests, implement deterministic scheduled combat, filtered view IDs/events, outcomes and canonical checkpoints; no renderer imports.
 - [ ] Run `npm test`, `npm run typecheck`, `npm run lint`, `npm run headless`; inspect normal headless outcome and record A evidence. A remains incomplete if any required rule acceptance is absent.
 
 ## Task B1 — Complete playable development match
@@ -72,29 +72,29 @@ Dependencies: A2. Files: combat/visibility/replay/index, `tests/combat.test.ts`,
 Dependencies: A3. Files: client main/renderer/models/input/hud/style, `index.html`, `vite.config.ts`, bot baseline controller, `tests/browser/match.spec.ts`, `playwright.config.ts`.
 
 - [ ] Write browser journey through Start/practice: select worker, issue resource order, observe real deposit, place/pay/build a house, queue/pay/train infantry, fight, reach ordinary outcome and rematch.
-- [ ] Implement orthographic terrain/units/buildings with distinct procedural silhouettes and state animation; pan/zoom, selection/drag/add/type, contextual commands and clear legal-action panel.
-- [ ] Add control groups, attack-move/stop/hold/patrol/queued commands, rally and idle cycling from actual sim actions. Disable unfinished actions with reasons and label the release development slice.
-- [ ] Add resource/population/age/queue/requirements/minimap/alerts/results and connection/loading/retry/help. No development cheats in shipped UI.
+- [x] Implement orthographic terrain/units/buildings with distinct procedural silhouettes and state animation; pan/zoom, selection/drag/add/type, contextual commands and clear legal-action panel.
+- [x] Add control groups, attack-move/stop/hold/patrol/queued commands, rally and idle cycling from actual sim actions. Disable unfinished actions with reasons and label the release development slice.
+- [x] Add resource/population/age/queue/requirements/minimap/alerts/results and connection/loading/retry/help. No development cheats in shipped UI.
 - [ ] Run `npm run build`, `npm run test:browser -- tests/browser/match.spec.ts`; inspect actual browser/screenshots at desktop resolutions; retain explicit human gate.
 
 ## Task B2 — Supplied audio event integration
 
 Dependencies: A1/B1 observation events. Files: audio module, `tools/sync-assets.ts`, `tests/browser/audio.spec.ts`, development preview UI, provenance docs.
 
-- [ ] Validate every supplied hash before copying assets to served public paths; never regenerate existing clips.
-- [ ] Write browser tests decoding event variants, forcing Ogg fallback, starting via user gesture, changing/restoring all buses and checking group-order acknowledgment count.
-- [ ] Implement manifest-driven event selection, cooldown/concurrency, 32-source priority budget, spatialization, loop crossfade/ducking and cleanup. Consume only permitted events.
+- [x] Validate every supplied hash before copying assets to served public paths; never regenerate existing clips.
+- [x] Write browser tests decoding event variants, forcing Ogg fallback, starting via user gesture, changing/restoring all buses and checking group-order acknowledgment count.
+- [x] Implement manifest-driven event selection, cooldown/concurrency, 32-source priority budget, spatialization, loop crossfade/ducking and cleanup. Consume only permitted events.
 - [ ] Run `npm run validate:assets`, `npm run test:browser -- tests/browser/audio.spec.ts`; listen to economy/construction/combat/results and preview loops. Mark absent event families not started until real game wiring exists.
 
 ## Task C — Real two-seat authoritative server
 
 Dependencies: A3; begin before completing all content. Files: server files, client session transport, `tests/server.test.ts`, `tests/browser/duel.spec.ts`, runbook.
 
-- [ ] Start ephemeral server and two real WebSocket clients; assert separate seats, ownership rejection, duplicate idempotency, third-seat rejection, malformed/rate limits and hidden state absence.
-- [ ] Implement create/join tokens, bounded worker-per-match scheduling, accepted-sequence high-water marks, per-view refs, fresh snapshot/rebind on reconnect, 60-second forfeit input and finalized results/rematch epochs.
-- [ ] Rewire B client and practice through the server composition; bot consumes `observe` and submits normal validated commands. Run `npm test -- tests/server.test.ts`.
+- [x] Start ephemeral server and two real WebSocket clients; assert separate seats, ownership rejection, duplicate idempotency, third-seat rejection, malformed/rate limits and hidden state absence.
+- [x] Implement create/join tokens, bounded worker-per-match scheduling, accepted-sequence high-water marks, per-view refs, fresh snapshot/rebind on reconnect, 60-second forfeit input and finalized results/rematch epochs.
+- [x] Rewire B client and practice through the server composition; bot consumes `observe` and submits normal validated commands. Run `npm test -- tests/server.test.ts`.
 - [ ] Run `npm run test:browser -- tests/browser/duel.spec.ts` with isolated contexts, simulated 150 ms RTT and 10-second outage; record a separate two-device manual procedure and evidence status.
-- [ ] Run production `npm run build` and `npm start`; verify `/health`, Start/Join and rematch against the built app; document exact startup/join commands.
+- [x] Run production `npm run build` and `npm start`; verify `/health`, Start/Join and rematch against the built app; document exact startup/join commands.
 
 ## Task D — Strategic depth
 
@@ -126,6 +126,8 @@ Dependencies: E. Files: `tools/stress.ts`, `tests/browser/stress.spec.ts`, deplo
 
 ## Execution ledger
 
-All tasks currently not started. Documentation approval is complete; application behavior remains unimplemented. This plan is self-reviewed against spec sections 1–6. Root may refine task granularity/interfaces from actual code evidence without weakening gates; record material changes. Exact commands become verified only after recorded successful execution.
+A1–A3 and B1–C are in progress. The development rules, online/practice matches, original Three.js presentation and supplied Web Audio are implemented. The full development browser suite passed nine tests, including paid house/Barracks construction, worker/Swordsman production, physical deposit, two-client duel/rematch, ten-second browser outage recovery and actual game-event audio after reconnect. Headless bot-versus-bot conquest and same-build final replay hash matched. Security/integration review findings were fixed with focused regressions. The final headless suite passed 63 tests across 11 files. Final verification evidence is maintained in docs/evidence/checkpoint.md.
+
+No A–F checkpoint is declared complete: the normal conquest evidence is headless; browser results currently use resignation; container tests do not implement container controls; full content/age mechanics, exact build fingerprint and durable replay packaging remain open. The400-unit headless p95 improved to35.1ms on M1 Pro16GB; the software-rendered1080p starting-view p95 was100ms and does not meet60fps. Human and real-device gates remain open. D–F feature breadth remains not started; tools for early performance evidence do not completeF. This plan is self-reviewed against spec sections 1–6. Root may refine task granularity/interfaces from actual code evidence without weakening gates; record material changes. Exact commands become verified only after recorded successful execution.
 
 Official API sources checked before selection: [Vite](https://vite.dev/guide/), [Vitest](https://vitest.dev/guide/), [Three.js](https://threejs.org/manual/en/installation.html), [Node releases](https://nodejs.org/en/about/previous-releases), [ws](https://github.com/websockets/ws), [Playwright](https://playwright.dev/docs/intro). Registry versions/engines are checked separately and pinned in the lockfile.

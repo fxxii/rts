@@ -1,0 +1,272 @@
+{
+  "version": "ironvale-development-0.1",
+  "completeness": "development-slice-only",
+  "note": "These implemented IDs are provisional. This ledger links candidate historical roles without marking the separately reserved full-reference counterpart IDs implemented. Full content parity, faction availability and mechanics remain open.",
+  "items": [
+    {
+      "counterpartId": "villager",
+      "kind": "unit",
+      "referenceEntry": "standard:unit:83",
+      "referenceName": "Villager",
+      "referenceVersion": "177723",
+      "mechanics": "gather/carry/drop-off, build and repair",
+      "implementationStatus": "verified",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [
+        "tests/browser/match.spec.ts"
+      ],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "militia",
+      "kind": "unit",
+      "referenceEntry": "standard:unit:74",
+      "referenceName": "Militia",
+      "referenceVersion": "177723",
+      "mechanics": "paid melee infantry; timed attacks",
+      "implementationStatus": "verified",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [
+        "tests/browser/match.spec.ts"
+      ],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "spearman",
+      "kind": "unit",
+      "referenceEntry": "standard:unit:93",
+      "referenceName": "Spearman",
+      "referenceVersion": "177723",
+      "mechanics": "paid infantry with cavalry bonus",
+      "implementationStatus": "verified",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [
+        "tests/combat.test.ts"
+      ],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "archer",
+      "kind": "unit",
+      "referenceEntry": "standard:unit:4",
+      "referenceName": "Archer",
+      "referenceVersion": "177723",
+      "mechanics": "paid ranged unit and projectile timing",
+      "implementationStatus": "verified",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [
+        "tests/combat.test.ts"
+      ],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "scout",
+      "kind": "unit",
+      "referenceEntry": "standard:unit:448",
+      "referenceName": "Scout Cavalry",
+      "referenceVersion": "177723",
+      "mechanics": "fast mounted scout, extended sight",
+      "implementationStatus": "verified",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [
+        "tests/combat.test.ts"
+      ],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "townCenter",
+      "kind": "building",
+      "referenceEntry": "standard:building:109",
+      "referenceName": "Town Center",
+      "referenceVersion": "177723",
+      "mechanics": "worker production, ages, capacity, drop-off and defense",
+      "implementationStatus": "verified",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [
+        "tests/browser/match.spec.ts"
+      ],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "house",
+      "kind": "building",
+      "referenceEntry": "standard:building:70",
+      "referenceName": "House",
+      "referenceVersion": "177723",
+      "mechanics": "paid construction and population",
+      "implementationStatus": "verified",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [
+        "tests/browser/match.spec.ts"
+      ],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "barracks",
+      "kind": "building",
+      "referenceEntry": "standard:building:12",
+      "referenceName": "Barracks",
+      "referenceVersion": "177723",
+      "mechanics": "swordsman and spear production",
+      "implementationStatus": "verified",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [
+        "tests/browser/match.spec.ts"
+      ],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "archeryRange",
+      "kind": "building",
+      "referenceEntry": "standard:building:87",
+      "referenceName": "Archery Range",
+      "referenceVersion": "177723",
+      "mechanics": "archer production",
+      "implementationStatus": "implemented",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "stable",
+      "kind": "building",
+      "referenceEntry": "standard:building:101",
+      "referenceName": "Stable",
+      "referenceVersion": "177723",
+      "mechanics": "scout production",
+      "implementationStatus": "implemented",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "mill",
+      "kind": "building",
+      "referenceEntry": "standard:building:68",
+      "referenceName": "Mill",
+      "referenceVersion": "177723",
+      "mechanics": "food drop-off",
+      "implementationStatus": "implemented",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "lumberCamp",
+      "kind": "building",
+      "referenceEntry": "standard:building:562",
+      "referenceName": "Lumber Camp",
+      "referenceVersion": "177723",
+      "mechanics": "wood drop-off",
+      "implementationStatus": "implemented",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "miningCamp",
+      "kind": "building",
+      "referenceEntry": "standard:building:584",
+      "referenceName": "Mining Camp",
+      "referenceVersion": "177723",
+      "mechanics": "gold/stone drop-off",
+      "implementationStatus": "implemented",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "blacksmith",
+      "kind": "building",
+      "referenceEntry": "standard:building:103",
+      "referenceName": "Blacksmith",
+      "referenceVersion": "177723",
+      "mechanics": "two development researches",
+      "implementationStatus": "implemented",
+      "assetStatus": "implemented-original-procedural",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "feudal",
+      "kind": "technology",
+      "referenceEntry": "standard:technology:101",
+      "referenceName": "Feudal Age",
+      "referenceVersion": "177723",
+      "mechanics": "age advancement",
+      "implementationStatus": "verified",
+      "assetStatus": "text-command-label",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [
+        "tests/economy.test.ts"
+      ],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "castle",
+      "kind": "technology",
+      "referenceEntry": "standard:technology:102",
+      "referenceName": "Castle Age",
+      "referenceVersion": "177723",
+      "mechanics": "age advancement",
+      "implementationStatus": "implemented",
+      "assetStatus": "text-command-label",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "imperial",
+      "kind": "technology",
+      "referenceEntry": "standard:technology:103",
+      "referenceName": "Imperial Age",
+      "referenceVersion": "177723",
+      "mechanics": "age advancement",
+      "implementationStatus": "implemented",
+      "assetStatus": "text-command-label",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "forging",
+      "kind": "technology",
+      "referenceEntry": "standard:technology:67",
+      "referenceName": "Forging",
+      "referenceVersion": "177723",
+      "mechanics": "attack increment",
+      "implementationStatus": "implemented",
+      "assetStatus": "text-command-label",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    },
+    {
+      "counterpartId": "tools",
+      "kind": "technology",
+      "referenceEntry": null,
+      "referenceName": null,
+      "referenceVersion": "original development extension",
+      "mechanics": "temporary original gathering-rate research",
+      "implementationStatus": "implemented",
+      "assetStatus": "text-command-label",
+      "audioStatus": "partial-event-family-integration",
+      "testEvidence": [],
+      "referenceParity": "blocked-development-balance-and-incomplete-mechanics"
+    }
+  ]
+}

@@ -15,3 +15,6 @@ playwright-report/
 test-results/
 coverage/
 .worktrees/
+
+# Reproducible served copy; canonical supplied audio is preserved under plan/.
+/public/audio/
